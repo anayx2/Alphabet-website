@@ -9,6 +9,7 @@ export default function Document() {
       lang="en"
       data-wf-page="65e02e1278aeac8c4c4d9b29"
       data-wf-site="63f38a8c92397a024fcb9ae8"
+      style={{ scrollBehavior: "smooth" }}
     >
       <Head>
         {/* Meta Tags */}

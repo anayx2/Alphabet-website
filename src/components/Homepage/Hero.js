@@ -1,6 +1,6 @@
-
-'use client'
+"use client";
 import React from "react";
+import styles from '@/'
 
 const Hero = () => {
   return (
@@ -146,7 +146,7 @@ const Hero = () => {
                           <div data-hover-elem="" className="button__texts">
                             <div className="button__text">Let’s TALK</div>
                             <div className="button__text is-absolute">
-                              Let’s TALK
+                              Let's TALK
                             </div>
                           </div>
                         </div>
@@ -176,8 +176,12 @@ const Hero = () => {
                     <div className="swiper-slide mod--home">
                       <div className="home__video w-embed">
                         <video
-                        //   style="width: 100%; height: 100%; object-fit: cover"
-                          style={{width: "100%", height: "100%", objectFit:"cover"}}
+                          //   style="width: 100%; height: 100%; object-fit: cover"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
                           muted
                           loop
                           playsinline
@@ -193,9 +197,12 @@ const Hero = () => {
                     <div className="swiper-slide mod--home">
                       <div className="home__video w-embed">
                         <video
-                        //   style="width: 100%; height: 100%; object-fit: cover"
-                          style={{width: "100%", height: "100%", objectFit:"cover"}}
-
+                          //   style="width: 100%; height: 100%; object-fit: cover"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
                           muted
                           loop
                           playsinline
@@ -211,10 +218,12 @@ const Hero = () => {
                     <div className="swiper-slide mod--home">
                       <div className="home__video w-embed">
                         <video
-                        //   style="width: 100%; height: 100%; object-fit: cover"
-                        style={{width: "100%", height: "100%", objectFit:"cover"}}
-
-
+                          //   style="width: 100%; height: 100%; object-fit: cover"
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
                           muted
                           loop
                           playsinline
@@ -271,7 +280,10 @@ const Hero = () => {
                     />
                   </div>
                 </div>
-                <div data-swiper-prev="home" className="home__stories-nav"></div>
+                <div
+                  data-swiper-prev="home"
+                  className="home__stories-nav"
+                ></div>
                 <div
                   data-swiper-next="home"
                   className="home__stories-nav is-next"
