@@ -20,7 +20,7 @@ const Navbar = () => {
                   class="logo-link w-inline-block w--current"
                 >
                   <img
-                    src="images/logo.png"
+                    src="/logo.png"
                     loading="eager"
                     width="Auto"
                     height="Auto"
