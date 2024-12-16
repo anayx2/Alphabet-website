@@ -13,9 +13,9 @@ import React from "react";
 const index = () => {
   return (
     <>
-      <div class="page-wrapper">
+      <div className="page-wrapper">
         <Navbar />
-        <main class="main">
+        <main className="main">
           <Hero />
           <About />
           <Services />

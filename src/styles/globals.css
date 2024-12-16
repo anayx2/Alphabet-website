@@ -9192,7 +9192,7 @@ figcaption {
 }
 
 .h1__letter.active {
-  transition: all .8s;
+  transition: all .5s;
   transform: translate(0)
 }
 

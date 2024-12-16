@@ -1,8 +1,60 @@
 "use client";
-import React from "react";
-import styles from '@/'
+import React, { useEffect, useRef } from "react";
 
 const Hero = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const playVideo = () => {
+      if (videoRef.current) {
+        videoRef.current
+          .play()
+          .catch((err) => console.log("Autoplay failed:", err));
+      }
+    };
+
+    playVideo();
+  }, []);
+
+  useEffect(() => {
+    const words = document.querySelectorAll(".h1__word");
+    const letters = document.querySelectorAll(".h1__letter");
+    const images = document.querySelectorAll(".home__image");
+
+    let index = 0;
+
+    const animate = () => {
+      words.forEach((word, i) => {
+        // Toggle the active class for words and corresponding images
+        if (i === index) {
+          word.querySelectorAll(".h1__letter").forEach((letter) => {
+            letter.classList.add("active");
+          });
+          images[i]?.classList.add("active");
+        } else {
+          word.querySelectorAll(".h1__letter").forEach((letter) => {
+            letter.classList.remove("active", "done");
+          });
+          images[i]?.classList.remove("active", "done");
+        }
+      });
+
+      setTimeout(() => {
+        words[index].querySelectorAll(".h1__letter").forEach((letter) => {
+          letter.classList.add("done");
+        });
+        images[index]?.classList.add("done");
+
+        index = (index + 1) % words.length; // Move to the next word
+      }, 1000); // Match this with your CSS transition duration
+    };
+
+    const interval = setInterval(animate, 2000); // Adjust the interval
+    animate(); // Trigger the first animation immediately
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
+
   return (
     <>
       <section className="section mod--hero">
@@ -17,39 +69,43 @@ const Hero = () => {
                 <h1 className="heading-1 mod--home">
                   <span>Let's build THE NEXT</span>
                   <br />
-                  <span data-h1-words="" className="h1__words">
-                    <strong className="h1__word">
-                      <em className="h1__letter active">s</em>
-                      <em className="h1__letter active">m</em>
-                      <em className="h1__letter active">a</em>
-                      <em className="h1__letter active">r</em>
-                      <em className="h1__letter active">t</em>
-                    </strong>
-                    <strong className="h1__word">
-                      <em className="h1__letter">b</em>
-                      <em className="h1__letter">i</em>
-                      <em className="h1__letter">g</em>
-                    </strong>
-                    <strong className="h1__word">
-                      <em className="h1__letter">t</em>
-                      <em className="h1__letter">e</em>
-                      <em className="h1__letter">c</em>
-                      <em className="h1__letter">h</em>
-                    </strong>
-                    <strong className="h1__word">
-                      <em className="h1__letter">b</em>
-                      <em className="h1__letter">u</em>
-                      <em className="h1__letter">z</em>
-                      <em className="h1__letter">z</em>
-                    </strong>
-                    <strong className="h1__word">
-                      <em className="h1__letter active done">c</em>
-                      <em className="h1__letter active done">o</em>
-                      <em className="h1__letter active done">o</em>
-                      <em className="h1__letter active done">l</em>
-                    </strong>
+                  <span className="w-auto">
+                    <span data-h1-words="" className="h1__words">
+                      <strong className="h1__word">
+                        <em className="h1__letter active">s</em>
+                        <em className="h1__letter active">m</em>
+                        <em className="h1__letter active">a</em>
+                        <em className="h1__letter active">r</em>
+                        <em className="h1__letter active">t</em>
+                      </strong>
+                      <strong className="h1__word">
+                        <em className="h1__letter">b</em>
+                        <em className="h1__letter">i</em>
+                        <em className="h1__letter">g</em>
+                      </strong>
+                      <strong className="h1__word">
+                        <em className="h1__letter">t</em>
+                        <em className="h1__letter">e</em>
+                        <em className="h1__letter">c</em>
+                        <em className="h1__letter">h</em>
+                      </strong>
+                      <strong className="h1__word">
+                        <em className="h1__letter">b</em>
+                        <em className="h1__letter">u</em>
+                        <em className="h1__letter">z</em>
+                        <em className="h1__letter">z</em>
+                      </strong>
+                      <strong className="h1__word">
+                        <em className="h1__letter active done">c</em>
+                        <em className="h1__letter active done">o</em>
+                        <em className="h1__letter active done">o</em>
+                        <em className="h1__letter active done">l</em>
+                      </strong>
+                    </span>
                   </span>
-                  <span className="h1__thing">THING</span> <br />
+                  <span className="w-auto">
+                    <span className="h1__thing">THING</span> <br />
+                  </span>
                 </h1>
                 <div data-home-images="" className="home__images">
                   <img
@@ -182,10 +238,11 @@ const Hero = () => {
                             height: "100%",
                             objectFit: "cover",
                           }}
+                          autoPlay
                           muted
                           loop
-                          playsinline
-                          loading="lazy"
+                          playsInline
+                          preload="auto"
                         >
                           <source
                             src="https://d3vlq52qrgdnc2.cloudfront.net/home-story-1.mp4"
@@ -203,10 +260,11 @@ const Hero = () => {
                             height: "100%",
                             objectFit: "cover",
                           }}
+                          autoPlay
                           muted
                           loop
-                          playsinline
-                          loading="lazy"
+                          playsInline
+                          preload="auto"
                         >
                           <source
                             src="https://d3vlq52qrgdnc2.cloudfront.net/home-story-2.mp4"
@@ -224,10 +282,11 @@ const Hero = () => {
                             height: "100%",
                             objectFit: "cover",
                           }}
+                          autoPlay
                           muted
                           loop
-                          playsinline
-                          loading="lazy"
+                          playsInline
+                          preload="auto"
                         >
                           <source
                             src="https://d3vlq52qrgdnc2.cloudfront.net/home-story-3.mp4"

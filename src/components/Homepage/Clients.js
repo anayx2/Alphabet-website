@@ -1,6 +1,19 @@
-import React from "react";
+'use client'
+
+import React, { useEffect, useRef } from "react";
 
 const Clients = () => {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const videoElement = videoRef.current;
+
+    if (videoElement) {
+      videoElement.play().catch((error) => {
+        console.error("Error attempting to play video:", error);
+      });
+    }
+  }, []);
   return (
     <>
       <section className="section">
@@ -280,7 +293,10 @@ const Clients = () => {
                     alt="plus icon"
                     className="clients__btn-icon is-minus done"
                   />
-                  <div data-hover-elem="" className="clients__btn-bg done"></div>
+                  <div
+                    data-hover-elem=""
+                    className="clients__btn-bg done"
+                  ></div>
                 </div>
               </div>
             </div>
@@ -294,11 +310,12 @@ const Clients = () => {
               >
                 <div className="clients__video pointer-events-off w-embed">
                   <video
+                    ref={videoRef}
                     className="clients__video"
-                    autoplay
+                    autoPlay
                     loop
                     muted
-                    playsinline
+                    playsInline
                     loading="lazy"
                   >
                     <source
@@ -312,7 +329,8 @@ const Clients = () => {
                   </video>
                 </div>
                 <div>
-                  <span className="text-weight-medium">350+</span> clients worldwide
+                  <span className="text-weight-medium">350+</span> clients
+                  worldwide
                 </div>
               </div>
             </div>

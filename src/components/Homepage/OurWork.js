@@ -1,4 +1,10 @@
+"use client"
 import React from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
 
 const OurWork = () => {
   return (
@@ -35,15 +41,10 @@ const OurWork = () => {
                         muted
                         playsInline
                         loading="lazy"
-                        // style="
-                        //     background-image: url(https://www.halo-lab.com/'https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/656ed72055fc2c14fdb5141a_small-Showreel-poster-00001.jpg');
-                        //   "
                         style={{
                           backgroundImage:
                             "url(https://www.halo-lab.com/'https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/656ed72055fc2c14fdb5141a_small-Showreel-poster-00001.jpg')",
                         }}
-                        // muted=""
-                        // playsinline=""
                         data-wf-ignore="true"
                         data-object-fit="cover"
                       >
@@ -103,231 +104,140 @@ const OurWork = () => {
                 </div>
               </div>
             </div>
-            <div data-swiper="works" className="swiper mod--works">
-              <div data-hover-parent="" className="swiper-wrapper">
-                <div className="swiper-slide mod--works">
-                  <div className="columns mod--works">
-                    <div className="columns__col mod--works is--1">
-                      <div className="works__info">
-                        <div className="text-size-14 text-style-allcaps mod--works-cat">
-                          HEALTHCARE
-                        </div>
-                        <a
-                          data-hover=""
-                          href="/project/kinetik.html"
-                          className="w-inline-block"
-                        >
-                          <h3 className="heading-5 mod--works">
-                            Kinetik Platform with over 3500+ Integrated
-                            Providers
-                          </h3>
-                        </a>
-                        <p className="opacity-70">
-                          We helped Kinetik in developing an app and a
-                          convenient analytics dashboard — by the end of 2022,
-                          they raised over $20M in funding.
-                        </p>
+            <Swiper
+              modules={[Navigation, Pagination]}
+              className="swiper mod--works"
+              navigation={{
+                prevEl: '[data-swiper-prev="works"]',
+                nextEl: '[data-swiper-next="works"]',
+              }}
+              pagination={{
+                el: '[data-swiper-pagination="works"]',
+                clickable: true,
+                renderBullet: function (index, className) {
+                  return (
+                    '<div class="' +
+                    className +
+                    ' swiper-pagination__item is-grow"></div>'
+                  );
+                },
+              }}
+            >
+              <SwiperSlide className="swiper-slide mod--works">
+                <div className="columns mod--works">
+                  <div className="columns__col mod--works is--1">
+                    <div className="works__info">
+                      <div className="text-size-14 text-style-allcaps mod--works-cat">
+                        HEALTHCARE
                       </div>
-                    </div>
-                    <div
-                      data-mask="works"
-                      className="columns__col mod--works is--2"
-                    >
                       <a
+                        data-hover=""
                         href="/project/kinetik.html"
-                        className="works__video-link w-inline-block"
+                        className="w-inline-block"
                       >
-                        <div className="works__video-case w-embed">
-                          <video
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              objectFit: "cover",
-                            }}
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            loading="lazy"
-                          >
-                            <source
-                              src="https://d3vlq52qrgdnc2.cloudfront.net/bg-project-kinetik.mp4"
-                              type="video/mp4"
-                            />
-                          </video>
-                        </div>
+                        <h3 className="heading-5 mod--works">
+                          Kinetik Platform with over 3500+ Integrated Providers
+                        </h3>
                       </a>
+                      <p className="opacity-70">
+                        We helped Kinetik in developing an app and a convenient
+                        analytics dashboard — by the end of 2022, they raised
+                        over $20M in funding.
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div className="swiper-slide mod--works">
-                  <div className="columns mod--works">
-                    <div className="columns__col mod--works is--1">
-                      <div className="works__info">
-                        <div className="text-size-14 text-style-allcaps mod--works-cat">
-                          E-COMMERCE
-                        </div>
-                        <a
-                          data-hover=""
-                          href="/project/raven.html"
-                          className="w-inline-block"
-                        >
-                          <h3 className="heading-5 mod--works">
-                            The Leading Brand for Custom Esports Clothing Design
-                          </h3>
-                        </a>
-                        <p className="opacity-70">
-                          Alphabet Technology crafted a 3D Builder for Raven
-                          from scratch, helping them dominate the esports market
-                          with a custom ecommerce product.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      data-mask="works"
-                      className="columns__col mod--works is--2"
+                  <div
+                    data-mask="works"
+                    className="columns__col mod--works is--2"
+                  >
+                    <a
+                      href="/project/kinetik.html"
+                      className="works__video-link w-inline-block"
                     >
+                      <div className="works__video-case w-embed">
+                        <video
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
+                          autoPlay
+                          loop
+                          muted
+                          playsInline
+                          loading="lazy"
+                        >
+                          <source
+                            src="https://d3vlq52qrgdnc2.cloudfront.net/bg-project-kinetik.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="swiper-slide mod--works">
+                <div className="columns mod--works">
+                  <div className="columns__col mod--works is--1">
+                    <div className="works__info">
+                      <div className="text-size-14 text-style-allcaps mod--works-cat">
+                        E-COMMERCE
+                      </div>
                       <a
+                        data-hover=""
                         href="/project/raven.html"
-                        className="works__video-link w-inline-block"
+                        className="w-inline-block"
                       >
-                        <div className="works__video-case w-embed">
-                          <video
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              objectFit: "cover",
-                            }}
-                            loop
-                            muted
-                            playsinline
-                            loading="lazy"
-                          >
-                            <source
-                              src="https://d3vlq52qrgdnc2.cloudfront.net/bg-project-raven-v3.mp4"
-                              type="video/mp4"
-                            />
-                          </video>
-                        </div>
+                        <h3 className="heading-5 mod--works">
+                          The Leading Brand for Custom Esports Clothing Design
+                        </h3>
                       </a>
+                      <p className="opacity-70">
+                        Alphabet Technology crafted a 3D Builder for Raven from
+                        scratch, helping them dominate the esports market with a
+                        custom ecommerce product.
+                      </p>
                     </div>
                   </div>
-                </div>
-                <div className="swiper-slide mod--works">
-                  <div className="columns mod--works">
-                    <div className="columns__col mod--works is--1">
-                      <div className="works__info">
-                        <div className="text-size-14 text-style-allcaps mod--works-cat">
-                          E-COMMERCE, CONSUMER PRODUCTS &amp; SERVICES
-                        </div>
-                        <a
-                          data-hover=""
-                          href="project/bookclub24"
-                          className="w-inline-block"
-                        >
-                          <h3 className="heading-5 mod--works">
-                            Bookclub24 — #1 German Online Library for Book
-                            Collectors
-                          </h3>
-                        </a>
-                        <p className="opacity-70">
-                          By assisting Bookclub24 with full-stack development
-                          and branding, we propelled the company to attract book
-                          lovers worldwide.
-                        </p>
-                      </div>
-                    </div>
-                    <div
-                      data-mask="works"
-                      className="columns__col mod--works is--2"
+                  <div
+                    data-mask="works"
+                    className="columns__col mod--works is--2"
+                  >
+                    <a
+                      href="/project/raven.html"
+                      className="works__video-link w-inline-block"
                     >
-                      <a
-                        href="project/bookclub24"
-                        className="works__video-link w-inline-block"
-                      >
-                        <div className="works__video-case w-embed">
-                          <video
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              objectFit: "cover",
-                            }}
-                            loop
-                            muted
-                            playsinline
-                            loading="lazy"
-                          >
-                            <source
-                              src="https://d3vlq52qrgdnc2.cloudfront.net/bg-project-Bookclub24.mp4"
-                              type="video/mp4"
-                            />
-                          </video>
-                        </div>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="swiper-slide mod--works">
-                  <div className="columns mod--works">
-                    <div className="columns__col mod--works is--1">
-                      <div className="works__info">
-                        <div className="text-size-14 text-style-allcaps mod--works-cat">
-                          REAL ESTATE
-                        </div>
-                        <a
-                          data-hover=""
-                          href="/project/mighty-buildings.html"
-                          className="w-inline-block"
+                      <div className="works__video-case w-embed">
+                        <video
+                          style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                          }}
+                          loop
+                          muted
+                          playsInline
+                          loading="lazy"
                         >
-                          <h3 className="heading-5 mod--works">
-                            $40 Million Raised by Mighty Buildings in Series B
-                          </h3>
-                        </a>
-                        <p className="opacity-70">
-                          We enhanced Mighty Buildings’ web portal and
-                          configurator. They have grown to 100+ employees and
-                          secured $100M in investment.
-                        </p>
+                          <source
+                            src="https://d3vlq52qrgdnc2.cloudfront.net/bg-project-raven-v3.mp4"
+                            type="video/mp4"
+                          />
+                        </video>
                       </div>
-                    </div>
-                    <div
-                      data-mask="works"
-                      className="columns__col mod--works is--2"
-                    >
-                      <a
-                        href="/project/mighty-buildings.html"
-                        className="works__video-link w-inline-block"
-                      >
-                        <div className="works__video-case w-embed">
-                          <video
-                            style={{
-                              width: "100%",
-                              height: "100%",
-                              objectFit: "cover",
-                            }}
-                            loop
-                            muted
-                            playsinline
-                            loading="lazy"
-                          >
-                            <source
-                              src="https://d3vlq52qrgdnc2.cloudfront.net/bg-project-Mighty-Buildings.mp4"
-                              type="video/mp4"
-                            />
-                          </video>
-                        </div>
-                      </a>
-                    </div>
+                    </a>
                   </div>
                 </div>
-              </div>
-            </div>
+              </SwiperSlide>
+              {/* Add more SwiperSlide components for the remaining slides */}
+            </Swiper>
             <div className="swiper-nav mod--works">
               <div
                 data-hover-elem=""
                 data-swiper-prev="works"
                 data-hover="prevent-responsive"
-                className="swiper-nav__arrow is-left mod--works active"
+                className="swiper-nav__arrow is-left mod--works"
               >
                 <div data-hover-elem="" className="button__icon-anim">
                   <div className="icon-regular is-size-fixed w-embed">
@@ -359,14 +269,14 @@ const OurWork = () => {
                 </div>
                 <div
                   data-hover-elem=""
-                  className="button__bg bg-color-black active"
+                  className="button__bg bg-color-black"
                 ></div>
               </div>
               <div
                 data-hover-elem=""
                 data-swiper-next="works"
                 data-hover="prevent-responsive"
-                className="swiper-nav__arrow mod--works active"
+                className="swiper-nav__arrow mod--works"
               >
                 <div data-hover-elem="" className="button__icon-anim">
                   <div className="icon-regular is-size-fixed w-embed">
@@ -398,7 +308,7 @@ const OurWork = () => {
                 </div>
                 <div
                   data-hover-elem=""
-                  className="button__bg bg-color-black active"
+                  className="button__bg bg-color-black"
                 ></div>
               </div>
             </div>
@@ -407,9 +317,7 @@ const OurWork = () => {
               data-swiper-pagination="works"
               className="swiper-pagin mod--works"
             >
-              <div className="swiper-pagination__item active is-grow"></div>
-              <div className="swiper-pagination__item is-grow"></div>
-              <div className="swiper-pagination__item is-grow"></div>
+              {/* Swiper will populate this */}
             </div>
           </div>
         </div>
