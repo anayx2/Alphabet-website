@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 
 const Footer = () => {
@@ -29,7 +29,10 @@ const Footer = () => {
                         Subscribe to our newsletter to stay in touch with the
                         latest.
                       </h2>
-                      <div data-input-invalid="" className="input-wrap mod--footer">
+                      <div
+                        data-input-invalid=""
+                        className="input-wrap mod--footer"
+                      >
                         <label
                           for="footer-Email"
                           className="form__label mod--footer"
@@ -58,12 +61,18 @@ const Footer = () => {
                         <div className="form__label-invalid is-subs anim">
                           Please, enter a valid email
                         </div>
-                        <div data-hover="" className="form-submit-wrap mod--footer">
+                        <div
+                          data-hover=""
+                          className="form-submit-wrap mod--footer"
+                        >
                           <div
                             data-hover-elem=""
                             className="button__icons mod--footer-form"
                           >
-                            <div data-hover-elem="" className="button__icon-anim">
+                            <div
+                              data-hover-elem=""
+                              className="button__icon-anim"
+                            >
                               <div className="icon-small w-embed">
                                 <svg
                                   aria-hidden="true"
@@ -93,7 +102,10 @@ const Footer = () => {
                                 </svg>
                               </div>
                             </div>
-                            <div data-hover-elem="" className="button__bg"></div>
+                            <div
+                              data-hover-elem=""
+                              className="button__bg"
+                            ></div>
                             <input
                               type="submit"
                               data-wait=" "
@@ -433,7 +445,10 @@ const Footer = () => {
                           </svg>
                         </div>
                       </div>
-                      <div data-hover-elem="" className="button__bg mod--npm"></div>
+                      <div
+                        data-hover-elem=""
+                        className="button__bg mod--npm"
+                      ></div>
                     </a>
                   </div>
                 </div>
@@ -525,7 +540,9 @@ const Footer = () => {
                           <div className="button__overflow">
                             <div data-hover-elem="" className="button__texts">
                               <div className="button__text">Design</div>
-                              <div className="button__text is-absolute">Design</div>
+                              <div className="button__text is-absolute">
+                                Design
+                              </div>
                             </div>
                           </div>
                         </a>
@@ -570,7 +587,9 @@ const Footer = () => {
                       <div className="button__overflow">
                         <div data-hover-elem="" className="button__texts">
                           <div className="button__text">Projects</div>
-                          <div className="button__text is-absolute">Projects</div>
+                          <div className="button__text is-absolute">
+                            Projects
+                          </div>
                         </div>
                       </div>
                       <div className="overflow-hidden hide-tablet">
@@ -847,7 +866,9 @@ const Footer = () => {
                       <div className="button__overflow">
                         <div data-hover-elem="" className="button__texts">
                           <div className="button__text">Contacts</div>
-                          <div className="button__text is-absolute">Contacts</div>
+                          <div className="button__text is-absolute">
+                            Contacts
+                          </div>
                         </div>
                       </div>
                       <div className="overflow-hidden hide-tablet">
@@ -989,7 +1010,9 @@ const Footer = () => {
                       >
                         <div className="button__overflow">
                           <div data-hover-elem="" className="button__texts">
-                            <div className="button__text">inquiry@halo-lab.com</div>
+                            <div className="button__text">
+                              inquiry@halo-lab.com
+                            </div>
                             <div className="button__text is-absolute">
                               inquiry@halo-lab.com
                             </div>
@@ -1020,7 +1043,9 @@ const Footer = () => {
                           className="button__overflow"
                         >
                           <div data-hover-elem="" className="button__texts">
-                            <div className="button__text">+1 (213) 337-8573</div>
+                            <div className="button__text">
+                              +1 (213) 337-8573
+                            </div>
                             <div className="button__text is-absolute">
                               +1 (213) 337-8573
                             </div>
@@ -1197,7 +1222,10 @@ const Footer = () => {
                     <div className="text-size-14 letter-spacing-005 text-style-allcaps">
                       DESIGN
                     </div>
-                    <ul role="list" className="footer-serv__list w-list-unstyled">
+                    <ul
+                      role="list"
+                      className="footer-serv__list w-list-unstyled"
+                    >
                       <li className="footer-serv__list-item">
                         <a
                           data-link-underline=""
@@ -1285,7 +1313,9 @@ const Footer = () => {
                         >
                           <div className="overflow-hidden">
                             <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">Mobile App Design</div>
+                              <div className="button__text">
+                                Mobile App Design
+                              </div>
                               <div className="button__text is-absolute">
                                 Mobile App Design
                               </div>
@@ -1381,7 +1411,10 @@ const Footer = () => {
                     <div className="text-size-14 letter-spacing-005 text-style-allcaps">
                       Development
                     </div>
-                    <ul role="list" className="footer-serv__list w-list-unstyled">
+                    <ul
+                      role="list"
+                      className="footer-serv__list w-list-unstyled"
+                    >
                       <li className="footer-serv__list-item">
                         <a
                           data-link-underline=""
@@ -1413,7 +1446,9 @@ const Footer = () => {
                         >
                           <div className="overflow-hidden">
                             <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">CMS Development</div>
+                              <div className="button__text">
+                                CMS Development
+                              </div>
                               <div className="button__text is-absolute">
                                 CMS Development
                               </div>
@@ -1433,7 +1468,9 @@ const Footer = () => {
                               data-hover-elem=""
                               className="button__texts active"
                             >
-                              <div className="button__text">Web Development</div>
+                              <div className="button__text">
+                                Web Development
+                              </div>
                               <div className="button__text is-absolute">
                                 Web Development
                               </div>
@@ -1570,7 +1607,9 @@ const Footer = () => {
                         >
                           <div className="overflow-hidden">
                             <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">Gatsby Development</div>
+                              <div className="button__text">
+                                Gatsby Development
+                              </div>
                               <div className="button__text is-absolute">
                                 Gatsby Development
                               </div>
@@ -1606,7 +1645,9 @@ const Footer = () => {
                         >
                           <div className="overflow-hidden">
                             <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">Sanity Development</div>
+                              <div className="button__text">
+                                Sanity Development
+                              </div>
                               <div className="button__text is-absolute">
                                 Sanity Development
                               </div>
@@ -1623,7 +1664,9 @@ const Footer = () => {
                         >
                           <div className="overflow-hidden">
                             <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">Vue JS Development</div>
+                              <div className="button__text">
+                                Vue JS Development
+                              </div>
                               <div className="button__text is-absolute">
                                 Vue JS Development
                               </div>
@@ -1637,7 +1680,10 @@ const Footer = () => {
                     <div className="text-size-14 letter-spacing-005 text-style-allcaps">
                       Marketing
                     </div>
-                    <ul role="list" className="footer-serv__list w-list-unstyled">
+                    <ul
+                      role="list"
+                      className="footer-serv__list w-list-unstyled"
+                    >
                       <li className="footer-serv__list-item">
                         <a
                           data-link-underline=""
@@ -1730,7 +1776,9 @@ const Footer = () => {
                               data-hover-elem=""
                               className="button__texts active"
                             >
-                              <div className="button__text">Pitch Deck Design</div>
+                              <div className="button__text">
+                                Pitch Deck Design
+                              </div>
                               <div className="button__text is-absolute">
                                 Pitch Deck Design
                               </div>
@@ -1767,7 +1815,9 @@ const Footer = () => {
                               data-hover-elem=""
                               className="button__texts active"
                             >
-                              <div className="button__text">Content Marketing</div>
+                              <div className="button__text">
+                                Content Marketing
+                              </div>
                               <div className="button__text is-absolute">
                                 Content Marketing
                               </div>
@@ -1801,7 +1851,9 @@ const Footer = () => {
                         >
                           <div className="overflow-hidden">
                             <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">Technical Audit</div>
+                              <div className="button__text">
+                                Technical Audit
+                              </div>
                               <div className="button__text is-absolute">
                                 Technical Audit
                               </div>
@@ -1827,7 +1879,9 @@ const Footer = () => {
               >
                 <div className="button__overflow">
                   <div data-hover-elem="" className="button__texts">
-                    <div className="button__text is-absolute">Manage cookies</div>
+                    <div className="button__text is-absolute">
+                      Manage cookies
+                    </div>
                     <div className="button__text">Manage cookies</div>
                   </div>
                 </div>
@@ -1855,7 +1909,9 @@ const Footer = () => {
               >
                 <div className="button__overflow">
                   <div data-hover-elem="" className="button__texts">
-                    <div className="button__text is-absolute">Privacy Policy</div>
+                    <div className="button__text is-absolute">
+                      Privacy Policy
+                    </div>
                     <div className="button__text">Privacy Policy</div>
                   </div>
                 </div>
@@ -1892,499 +1948,6 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        {/* <div className="modals">
-          
-          <div fs-cc="banner" className="banner-cookie"></div>
-          <div
-            data-lenis-prevent=""
-            data-remodal-id="cookie"
-            className="remodal is--global is--scroll"
-          >
-            <div className="remodal__scroll">
-              <div className="remodal__container">
-                <div className="remodal__close">
-                  <div
-                    data-hover-elem=""
-                    data-hover="prevent-responsive"
-                    data-remodal-action="close"
-                    className="button-close"
-                  >
-                    <div className="button-close__icon w-embed">
-                      <svg
-                        aria-hidden="true"
-                        role="img"
-                        fill="currentColor"
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        width="100%"
-                        height="100%"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M18.895 5.106a1 1 0 0 1 0 1.414L6.52 18.894a1 1 0 0 1-1.414-1.414L17.48 5.106a1 1 0 0 1 1.415 0Z"
-                          clip-rule="evenodd"
-                        />
-                        <path
-                          fill-rule="evenodd"
-                          d="M5.105 5.106a1 1 0 0 1 1.415 0L18.894 17.48a1 1 0 0 1-1.414 1.414L5.105 6.52a1 1 0 0 1 0-1.414Z"
-                          clip-rule="evenodd"
-                        />
-                      </svg>
-                    </div>
-                    <div
-                      data-hover-elem=""
-                      className="button__bg bg-color-white"
-                    ></div>
-                  </div>
-                </div>
-                <div fs-cc="preferences" className="form-wrapper w-form">
-                  <form
-                    method="get"
-                    data-style-checkbox="switcher"
-                    name="wf-form-Cookie-Preferences"
-                    data-name="Cookie Preferences"
-                    id="wf-form-Cookie-Preferences"
-                    data-form-default=""
-                    className="form"
-                    data-wf-page-id="65e02e1278aeac8c4c4d9b29"
-                    data-wf-element-id="da09826c-7386-e772-72f3-900f8171a8e6"
-                  >
-                    <div className="cookie-modal__top">
-                      <div className="remodal__heading">
-                        Cookie and Privacy Settings
-                      </div>
-                      <div className="text-color-grey">
-                        We use cookies for various purposes to improve your
-                        online experience on our platform. See
-                        <a href="cookie-policy" className="text-style-underline">
-                          Privacy Policy
-                        </a>
-                        for more details.
-                      </div>
-                      <div className="cookie-modal__buttons">
-                        <div
-                          href="#hero"
-                          data-remodal-action="close"
-                          data-hover=""
-                          fs-cc="deny"
-                          className="button is-small-simple is-border-grey is-flex-grow"
-                        >
-                          <div className="button__overflow">
-                            <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">Reject all cookies</div>
-                              <div className="button__text is-absolute">
-                                Reject all cookies
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div
-                          href="#hero"
-                          data-remodal-action="close"
-                          data-hover=""
-                          fs-cc="allow"
-                          className="button is-small-simple bg-color-black is-flex-grow"
-                        >
-                          <div className="button__overflow">
-                            <div data-hover-elem="" className="button__texts">
-                              <div className="button__text">Accept all cookies</div>
-                              <div className="button__text is-absolute">
-                                Accept all cookies
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="cookie-modal__body">
-                      <div className="cookie-modal__form-heading">
-                        Change my preferences
-                      </div>
-                      <div
-                        data-dropdown-cookie=""
-                        className="dropdown mod--cookie-form"
-                      >
-                        <div className="dropdown__toggle mod--cookie-form">
-                          <div
-                            data-dropdown-cookie-toggle=""
-                            className="dropdown__title-wrap mod--cookie-form"
-                          >
-                            <div className="dropdown__icon-wrap">
-                              <div
-                                data-dropdown-plus=""
-                                className="dropdown__icons"
-                              >
-                                <div className="dropdown__icon is-open w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                                <div className="dropdown__icon is-close w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                              <div className="button__bg bg-color-white"></div>
-                            </div>
-                            <div className="dropdown__title text-weight-medium">
-                              Necessary cookies (always active)
-                            </div>
-                          </div>
-                          <label className="w-checkbox cookie-form__checkbox-label pointer-events-off">
-                            <input
-                              type="checkbox"
-                              name="Essential-2"
-                              id="Essential-2"
-                              data-name="Essential 2"
-                              className="w-checkbox-input hide"
-                              checked=""
-                            />
-                            <span
-                              className="cookie-form__checkbox-span pointer-events-off w-form-label"
-                              for="Essential-2"
-                            ></span>
-                          </label>
-                        </div>
-                        <div className="dropdown__list">
-                          <div className="cookie-form__rich w-richtext">
-                            <p>
-                              We use necessary cookies for smooth functionality
-                              like page navigation and secure access. They are
-                              activated by your actions, such as adjusting
-                              settings or logging in.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-dropdown-cookie=""
-                        className="dropdown mod--cookie-form"
-                      >
-                        <div className="dropdown__toggle mod--cookie-form">
-                          <div
-                            data-dropdown-cookie-toggle=""
-                            className="dropdown__title-wrap mod--cookie-form"
-                          >
-                            <div className="dropdown__icon-wrap">
-                              <div
-                                data-dropdown-plus=""
-                                className="dropdown__icons"
-                              >
-                                <div className="dropdown__icon is-open w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                                <div className="dropdown__icon is-close w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                              <div className="button__bg bg-color-white"></div>
-                            </div>
-                            <div className="dropdown__title text-weight-medium">
-                              Functional cookies
-                            </div>
-                          </div>
-                          <label className="w-checkbox cookie-form__checkbox-label">
-                            <input
-                              type="checkbox"
-                              name="Personalization-2"
-                              id="Personalization-2"
-                              data-name="Personalization 2"
-                              fs-cc-checkbox="personalization"
-                              className="w-checkbox-input hide"
-                            />
-                            <span
-                              className="cookie-form__checkbox-span w-form-label"
-                              for="Personalization-2"
-                            ></span>
-                          </label>
-                        </div>
-                        <div className="dropdown__list">
-                          <div className="cookie-form__rich w-richtext">
-                            <p>
-                              Functionality cookies on our website aim to
-                              personalize your experience and recall your
-                              selections. For example, they may retain your
-                              language preferences or login details.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-dropdown-cookie=""
-                        className="dropdown mod--cookie-form"
-                      >
-                        <div className="dropdown__toggle mod--cookie-form">
-                          <div
-                            data-dropdown-cookie-toggle=""
-                            className="dropdown__title-wrap mod--cookie-form"
-                          >
-                            <div className="dropdown__icon-wrap">
-                              <div
-                                data-dropdown-plus=""
-                                className="dropdown__icons"
-                              >
-                                <div className="dropdown__icon is-open w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                                <div className="dropdown__icon is-close w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                              <div className="button__bg bg-color-white"></div>
-                            </div>
-                            <div className="dropdown__title text-weight-medium">
-                              Analytics cookies
-                            </div>
-                          </div>
-                          <label className="w-checkbox cookie-form__checkbox-label">
-                            <input
-                              type="checkbox"
-                              name="analytics-2"
-                              id="analytics-2"
-                              data-name="Analytics 2"
-                              fs-cc-checkbox="analytics"
-                              className="w-checkbox-input hide"
-                            />
-                            <span
-                              className="cookie-form__checkbox-span w-form-label"
-                              for="analytics-2"
-                            ></span>
-                          </label>
-                        </div>
-                        <div className="dropdown__list">
-                          <div className="cookie-form__rich w-richtext">
-                            <p>
-                              These cookies help us to learn engagement patterns
-                              on our website. Through data collection and
-                              reporting of site usage statistics, they offer
-                              valuable insights into user behavior.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        data-dropdown-cookie=""
-                        className="dropdown mod--cookie-form is--last"
-                      >
-                        <div className="dropdown__toggle mod--cookie-form">
-                          <div
-                            data-dropdown-cookie-toggle=""
-                            className="dropdown__title-wrap mod--cookie-form"
-                          >
-                            <div className="dropdown__icon-wrap">
-                              <div
-                                data-dropdown-plus=""
-                                className="dropdown__icons"
-                              >
-                                <div className="dropdown__icon is-open w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M12 4a1 1 0 0 1 1 1v14a1 1 0 1 1-2 0V5a1 1 0 0 1 1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                                <div className="dropdown__icon is-close w-embed">
-                                  <svg
-                                    aria-hidden="true"
-                                    role="img"
-                                    fill="currentColor"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 24 24"
-                                    width="100%"
-                                    height="100%"
-                                  >
-                                    <path
-                                      fill-rule="evenodd"
-                                      d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1Z"
-                                      clip-rule="evenodd"
-                                    />
-                                  </svg>
-                                </div>
-                              </div>
-                              <div className="button__bg bg-color-white"></div>
-                            </div>
-                            <div className="dropdown__title text-weight-medium">
-                              Advertising cookies
-                            </div>
-                          </div>
-                          <label className="w-checkbox cookie-form__checkbox-label">
-                            <input
-                              type="checkbox"
-                              name="Marketing-2"
-                              id="Marketing-2"
-                              data-name="Marketing 2"
-                              fs-cc-checkbox="marketing"
-                              className="w-checkbox-input hide"
-                            />
-                            <span
-                              className="cookie-form__checkbox-span w-form-label"
-                              for="Marketing-2"
-                            ></span>
-                          </label>
-                        </div>
-                        <div className="dropdown__list">
-                          <div className="cookie-form__rich w-richtext">
-                            <p>
-                              We use advertising cookies to improve your
-                              experience by showing relevant ads based on your
-                              interests. This ensures a more enjoyable
-                              interaction with our brand across platforms.
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div
-                      href="#hero"
-                      fs-cc="submit"
-                      data-hover=""
-                      data-remodal-action="close"
-                      className="button is-small-simple"
-                    >
-                      <div className="button__overflow">
-                        <div data-hover-elem="" className="button__texts">
-                          <div className="button__text">
-                            Confirm
-                            <span className="hide-mobile-portrait">
-                              my preferences{" "}
-                            </span>
-                            and close
-                          </div>
-                          <div className="button__text is-absolute">
-                            Confirm
-                            <span className="hide-mobile-portrait">
-                              my preferences{" "}
-                            </span>
-                            and close
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </form>
-                  <div className="w-form-done">
-                    <div>Thank you! Your submission has been received!</div>
-                  </div>
-                  <div className="w-form-fail">
-                    <div>
-                      Oops! Something went wrong while submitting the form.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </footer>
     </>
   );

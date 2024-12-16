@@ -1,7 +1,6 @@
 "use client";
 import React, { useState, useRef, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -188,14 +187,15 @@ const Contact = () => {
                   <Swiper
                     ref={swiperRef}
                     className="swiper mod--discuss"
-                    slidesPerView={1}
+                    slidesPerView={0.93}
                     loop={true}
+                    
                     autoplay={{
                       delay: 5000,
                       disableOnInteraction: false,
                     }}
                   >
-                    <SwiperSlide className="swiper-slide mod--discuss">
+                    <SwiperSlide className="swiper-slide mod--discuss" style={{margin:"10px"}}>
                       <div className="text-size-20 text-weight-medium">
                         The site developed by Alphabet Technology projected a
                         very premium experience, successfully delivering the
@@ -220,7 +220,7 @@ const Contact = () => {
                         </div>
                       </div>{" "}
                     </SwiperSlide>
-                    <SwiperSlide className="swiper-slide mod--discuss">
+                    <SwiperSlide className="swiper-slide mod--discuss" style={{margin:"10px"}}>
                       <div className="text-size-20 text-weight-medium">
                         Thanks to Alphabet Technology&#x27;s work, the client
                         scored 95 points on the PageSpeed insights test and
@@ -246,7 +246,7 @@ const Contact = () => {
                         </div>
                       </div>{" "}
                     </SwiperSlide>
-                    <SwiperSlide className="swiper-slide mod--discuss">
+                    <SwiperSlide className="swiper-slide mod--discuss" style={{margin:"10px"}}>
                       <div className="text-size-20 text-weight-medium">
                         The client is thrilled with the new site and excited to
                         deploy it soon. Alphabet Technology manages tasks well

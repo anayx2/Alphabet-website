@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import React from "react";
 
@@ -421,7 +421,7 @@ const Navbar = () => {
                   </div>
                 </a>
               </nav>
-              <div data-menu-services-anim="" class="columns mod--menu active">
+              {/* <div data-menu-services-anim="" class="columns mod--menu active">
                 <div class="columns__col mod--menu">
                   <a
                     data-hover="prevent-responsive"
@@ -1206,7 +1206,7 @@ const Navbar = () => {
                     class="menu__service-bg active"
                   />
                 </div>
-              </div>
+              </div> */}
             </div>
             <div class="menu__btn-wrap">
               <a

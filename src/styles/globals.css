@@ -19542,7 +19542,8 @@ figcaption {
       grid-row-gap: .75rem
   }
   .swiper-nav.mod--works {
-      grid-column-gap: .875rem;
+      /* grid-column-gap: .875rem; */
+      grid-column-gap: .1rem;
       bottom: 3rem;
       left: 3rem;
       right: auto
