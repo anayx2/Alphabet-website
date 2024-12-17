@@ -2,13 +2,14 @@ import About from "@/components/Homepage/About";
 import Articles from "@/components/Homepage/Articles";
 import Benifits from "@/components/Homepage/Benifits";
 import Clients from "@/components/Homepage/Clients";
-import Contact from "@/components/Homepage/Contact";
+import Contact from "@/components/Homepage/Contact1";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Homepage/Hero";
 import Navbar from "@/components/Navbar";
 import OurWork from "@/components/Homepage/OurWork";
 import Services from "@/components/Homepage/Services";
 import React from "react";
+import ContactForm from "@/components/ContactForm";
 
 const index = () => {
   return (
@@ -23,7 +24,8 @@ const index = () => {
           <OurWork />
           <Benifits />
           <Articles />
-          <Contact />
+          {/* <Contact /> */}
+          <ContactForm/>
         </main>
         <Footer />
       </div>

@@ -1,6 +1,8 @@
-import React, { useState } from 'react'
+'use client'
 
-const MeetingScheduler = () => {
+import { useState } from 'react'
+
+export default function ScheduleMeeting({ onClose }) {
   const [selectedDate, setSelectedDate] = useState('19')
   const [timeFormat, setTimeFormat] = useState('12h')
   const [duration, setDuration] = useState('15m')
@@ -11,7 +13,16 @@ const MeetingScheduler = () => {
   ]
 
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg">
+    <div className="bg-white rounded-3xl p-8 max-w-5xl w-full relative">
+      <button
+        onClick={onClose}
+        className="absolute right-4 top-4 p-2 hover:bg-gray-100 rounded-full"
+      >
+        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+
       <div className="grid md:grid-cols-[300px,1fr,250px] gap-6">
         {/* Left Panel */}
         <div className="space-y-4">
@@ -23,9 +34,10 @@ const MeetingScheduler = () => {
               <div className="font-medium">Halo Lab</div>
             </div>
           </div>
-          <h1 className="text-xl font-semibold">Project discussion</h1>
+          <h2 className="text-xl font-semibold">Project discussion</h2>
           <p className="text-sm text-gray-600">
-            Schedule a short intro call, and we'd love to discuss how we can elevate your business with our varied services.
+            Schedule a short intro call, and we'd love to discuss how we
+            can elevate your business with our varied services.
           </p>
           <div className="space-y-2">
             <div className="flex items-center gap-2 text-sm">
@@ -34,13 +46,13 @@ const MeetingScheduler = () => {
               </svg>
               <div className="flex border rounded-md">
                 <button 
-                  className={`px-2 py-1 text-xs ${duration === '15m' ? 'bg-gray-200' : ''}`}
+                  className={`px-3 py-1 text-sm rounded-l-md ${duration === '15m' ? 'bg-gray-100' : ''}`}
                   onClick={() => setDuration('15m')}
                 >
                   15m
                 </button>
                 <button 
-                  className={`px-2 py-1 text-xs ${duration === '30m' ? 'bg-gray-200' : ''}`}
+                  className={`px-3 py-1 text-sm rounded-r-md ${duration === '30m' ? 'bg-gray-100' : ''}`}
                   onClick={() => setDuration('30m')}
                 >
                   30m
@@ -51,7 +63,7 @@ const MeetingScheduler = () => {
               <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
               </svg>
-              <select className="border rounded-md px-2 py-1 text-xs">
+              <select className="border rounded-md px-2 py-1 text-sm">
                 <option>Asia/Kolkata</option>
               </select>
             </div>
@@ -77,9 +89,9 @@ const MeetingScheduler = () => {
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-7 text-sm">
+          <div className="grid grid-cols-7 text-sm gap-1">
             {['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'].map(day => (
-              <div key={day} className="text-gray-500">{day}</div>
+              <div key={day} className="text-gray-500 text-center py-2">{day}</div>
             ))}
             {Array.from({ length: 31 }, (_, i) => (
               <button
@@ -105,24 +117,24 @@ const MeetingScheduler = () => {
             </div>
             <div className="flex border rounded-md">
               <button 
-                className={`px-2 py-1 text-xs ${timeFormat === '12h' ? 'bg-gray-200' : ''}`}
+                className={`px-2 py-1 text-xs rounded-l-md ${timeFormat === '12h' ? 'bg-gray-100' : ''}`}
                 onClick={() => setTimeFormat('12h')}
               >
                 12h
               </button>
               <button 
-                className={`px-2 py-1 text-xs ${timeFormat === '24h' ? 'bg-gray-200' : ''}`}
+                className={`px-2 py-1 text-xs rounded-r-md ${timeFormat === '24h' ? 'bg-gray-100' : ''}`}
                 onClick={() => setTimeFormat('24h')}
               >
                 24h
               </button>
             </div>
           </div>
-          <div className="space-y-2">
+          <div className="space-y-2 max-h-[400px] overflow-y-auto">
             {timeSlots.map((slot) => (
               <button
                 key={slot}
-                className="w-full text-left px-4 py-2 border rounded-md hover:bg-gray-100"
+                className="w-full text-left px-4 py-2 border rounded-lg hover:bg-gray-100"
               >
                 {slot}
               </button>
@@ -130,17 +142,7 @@ const MeetingScheduler = () => {
           </div>
         </div>
       </div>
-      <button
-        className="absolute right-4 top-4 p-2 hover:bg-gray-100 rounded-full"
-        aria-label="Close"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
     </div>
   )
 }
-
-export default MeetingScheduler
 
