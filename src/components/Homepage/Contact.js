@@ -1,146 +1,106 @@
-import React, { useState } from 'react'
+import React, { useState } from "react";
+import ContactForm from "../ContactForm";
 
 const MeetingScheduler = () => {
-  const [selectedDate, setSelectedDate] = useState('19')
-  const [timeFormat, setTimeFormat] = useState('12h')
-  const [duration, setDuration] = useState('15m')
+  const [isContactFormOpen, setIsContactFormOpen] = useState(false);
 
-  const timeSlots = [
-    '12:30pm', '1:00pm', '1:30pm', '2:00pm', '2:30pm',
-    '3:00pm', '3:30pm', '4:00pm', '4:30pm', '5:00pm'
-  ]
+  const SendMessageIcon = () => (
+    <svg
+      aria-hidden="true"
+      role="img"
+      fill="currentColor"
+      xmlns="http://www.w3.org/2000/svg"
+      viewBox="0 0 16 16"
+      width="100%"
+      height="100%"
+    >
+      <path
+        fillRule="evenodd"
+        d="M3.5 8a1 1 0 0 1 1-1h4a1 1 0 0 1 0 2h-4a1 1 0 0 1-1-1Z"
+        clipRule="evenodd"
+      />
+      <path
+        fillRule="evenodd"
+        d="M14.216 6.693a1.494 1.494 0 0 1 0 2.615L3.664 15.222a1.5 1.5 0 0 1-2.148-1.823L3.447 8l-1.93-5.398A1.5 1.5 0 0 1 3.662.779l10.553 5.914ZM12.458 8 3.845 3.173l1.545 4.32c.119.328.119.687 0 1.015l-1.545 4.32L12.457 8Z"
+        clipRule="evenodd"
+      />
+    </svg>
+  );
+
+  const handleOpenContactForm = () => {
+    setIsContactFormOpen(true); // Open the ContactForm modal
+  };
+
+  const handleCloseContactForm = () => {
+    setIsContactFormOpen(false); // Close the ContactForm modal
+  };
 
   return (
-    <div className="max-w-5xl mx-auto p-6 bg-white shadow-lg rounded-lg">
-      <div className="grid md:grid-cols-[300px,1fr,250px] gap-6">
-        {/* Left Panel */}
-        <div className="space-y-4">
-          <div className="flex items-center gap-3">
-            <div className="bg-black text-white w-8 h-8 rounded-full flex items-center justify-center text-sm">
-              HL
-            </div>
-            <div>
-              <div className="font-medium">Halo Lab</div>
-            </div>
-          </div>
-          <h1 className="text-xl font-semibold">Project discussion</h1>
-          <p className="text-sm text-gray-600">
-            Schedule a short intro call, and we'd love to discuss how we can elevate your business with our varied services.
-          </p>
-          <div className="space-y-2">
-            <div className="flex items-center gap-2 text-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <div className="flex border rounded-md">
-                <button 
-                  className={`px-2 py-1 text-xs ${duration === '15m' ? 'bg-gray-200' : ''}`}
-                  onClick={() => setDuration('15m')}
+    <>
+      <section id="discuss" className="section mod--discuss">
+        <div
+          data-w-id="7092799e-d269-0bf1-02e2-a8316ce8ccd0"
+          className="container"
+        >
+          <div
+            className="columns mod--discuss"
+            style={{
+              display: "flex",
+              justifyContent: "space-evenly",
+              alignItems: "center",
+            }}
+          >
+            <div className="bg-white rounded-[32px] max-w-4xl w-full p-12 text-center">
+              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6">
+                Ready to discuss
+                <br />
+                your project with us?
+              </h2>
+              <p className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-10">
+                Let's talk about how we can craft a user experience that not
+                only looks great but drives real growth for your product.
+              </p>
+              <div className="form-submit-wrap flex justify-center">
+                <button
+                  className="button w-inline-block"
+                  aria-label="Send a message"
+                  type="button"
+                  onClick={handleOpenContactForm} // Trigger ContactForm on click
                 >
-                  15m
-                </button>
-                <button 
-                  className={`px-2 py-1 text-xs ${duration === '30m' ? 'bg-gray-200' : ''}`}
-                  onClick={() => setDuration('30m')}
-                >
-                  30m
-                </button>
-              </div>
-            </div>
-            <div className="flex items-center gap-2 text-sm">
-              <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
-              </svg>
-              <select className="border rounded-md px-2 py-1 text-xs">
-                <option>Asia/Kolkata</option>
-              </select>
-            </div>
-          </div>
-        </div>
-
-        {/* Calendar */}
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <h2 className="text-lg font-semibold">December 2024</h2>
-              <div className="flex gap-1">
-                <button className="p-1 hover:bg-gray-100 rounded">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                  </svg>
-                </button>
-                <button className="p-1 hover:bg-gray-100 rounded">
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                  </svg>
+                  <div className="button__overflow">
+                    <div className="button__texts active">
+                      <span className="button__text is-absolute">
+                        SEND A MESSAGE
+                      </span>
+                      <span className="button__text">SEND A MESSAGE</span>
+                    </div>
+                  </div>
+                  <div className="button__icons is-white active">
+                    <div className="button__icon-anim">
+                      <div className="icon-small w-embed">
+                        <SendMessageIcon />
+                      </div>
+                      <div className="icon-small is-absolute w-embed">
+                        <SendMessageIcon />
+                      </div>
+                    </div>
+                    <div className="button__bg active"></div>
+                  </div>
                 </button>
               </div>
             </div>
           </div>
-          <div className="grid grid-cols-7 text-sm">
-            {['MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'].map(day => (
-              <div key={day} className="text-gray-500">{day}</div>
-            ))}
-            {Array.from({ length: 31 }, (_, i) => (
-              <button
-                key={i + 1}
-                className={`p-2 text-sm rounded-lg ${
-                  selectedDate === String(i + 1)
-                    ? 'bg-black text-white'
-                    : 'hover:bg-gray-100'
-                }`}
-                onClick={() => setSelectedDate(String(i + 1))}
-              >
-                {i + 1}
-              </button>
-            ))}
-          </div>
         </div>
+      </section>
 
-        {/* Time Slots */}
-        <div className="space-y-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center gap-2">
-              <div>Thu {selectedDate}</div>
-            </div>
-            <div className="flex border rounded-md">
-              <button 
-                className={`px-2 py-1 text-xs ${timeFormat === '12h' ? 'bg-gray-200' : ''}`}
-                onClick={() => setTimeFormat('12h')}
-              >
-                12h
-              </button>
-              <button 
-                className={`px-2 py-1 text-xs ${timeFormat === '24h' ? 'bg-gray-200' : ''}`}
-                onClick={() => setTimeFormat('24h')}
-              >
-                24h
-              </button>
-            </div>
-          </div>
-          <div className="space-y-2">
-            {timeSlots.map((slot) => (
-              <button
-                key={slot}
-                className="w-full text-left px-4 py-2 border rounded-md hover:bg-gray-100"
-              >
-                {slot}
-              </button>
-            ))}
-          </div>
+      {/* Render the ContactForm if open */}
+      {isContactFormOpen && (
+        <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
+          <ContactForm onClose={handleCloseContactForm} />
         </div>
-      </div>
-      <button
-        className="absolute right-4 top-4 p-2 hover:bg-gray-100 rounded-full"
-        aria-label="Close"
-      >
-        <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-        </svg>
-      </button>
-    </div>
-  )
-}
+      )}
+    </>
+  );
+};
 
-export default MeetingScheduler
-
+export default MeetingScheduler;
