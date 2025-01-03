@@ -1,8 +1,14 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation";
 
 const Navbar = () => {
+  const     router = useRouter();
+
+  const projects = () => {
+    router.push('/projects')
+  }
   return (
     <>
       <header data-anim-trigger="load" class="header is-header-hide">
@@ -60,19 +66,14 @@ const Navbar = () => {
                       </svg>
                     </div>
                   </div>
-                  <a
-                    data-hover=""
-                    href="projects.html"
-                    class="header__nav-link w-inline-block"
-                  >
-                    <div class="button__overflow">
-                      <div data-hover-elem="" class="button__texts">
-                        <div class="button__text">projects</div>
-                        <div class="button__text is-absolute">projects</div>
-                      </div>
+
+
+                  <div class="button__overflow" onClick={projects}>
+                    <div data-hover-elem="" class="button__texts">
+                      <div class="button__text">projects</div>
+                      <div class="button__text is-absolute">projects</div>
                     </div>
-                  </a>
-                  <link rel="prefetch" href="projects.html" />
+                  </div>
                   <a
                     data-hover=""
                     href="/services/dedicated-team.html"
@@ -223,19 +224,14 @@ const Navbar = () => {
                       </svg>
                     </div>
                   </div>
-                  <a
-                    data-hover=""
-                    href="projects.html"
-                    class="header__nav-link w-inline-block"
-                  >
-                    <div class="button__overflow">
-                      <div data-hover-elem="" class="button__texts">
-                        <div class="button__text">projects</div>
-                        <div class="button__text is-absolute">projects</div>
-                      </div>
+
+                  <div class="button__overflow" onClick={projects}>
+                    <div data-hover-elem="" class="button__texts">
+                      <div class="button__text">projects</div>
+                      <div class="button__text is-absolute">projects</div>
                     </div>
-                  </a>
-                  <link rel="prefetch" href="projects.html" />
+                  </div>
+
                   <a
                     data-hover=""
                     href="/services/dedicated-team.html"
@@ -371,14 +367,13 @@ const Navbar = () => {
                     </svg>
                   </div>
                 </div>
-                <a href="projects.html" class="header__nav-link w-inline-block">
-                  <div class="overflow-hidden">
-                    <div data-hover-elem="" class="button__texts">
-                      <div class="button__text">Projects</div>
-                      <div class="button__text is-absolute">Projects</div>
-                    </div>
+                <div class="overflow-hidden" onClick={projects}>
+                  <div data-hover-elem="" class="button__texts">
+                    <div class="button__text">Projects</div>
+                    <div class="button__text is-absolute">Projects</div>
                   </div>
-                </a>
+                </div>
+
                 <a
                   href="/services/dedicated-team.html"
                   class="header__nav-link w-inline-block"

@@ -1,8 +1,18 @@
 "use client";
 import React, { useEffect, useRef } from "react";
+import 'swiper/css';
+import 'swiper/css/navigation';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+
 
 const Hero = () => {
   const videoRef = useRef(null);
+  const videos = [
+    '/Homepage/herovideos/Website.mp4',
+    '/Homepage/herovideos/UX-UI.mp4',
+    '/Homepage/herovideos/Website.mp4'
+  ];
 
   useEffect(() => {
     const playVideo = () => {
@@ -227,12 +237,26 @@ const Hero = () => {
               className="columns__col mod--home anim"
             >
               <div className="home__slider">
-                <div data-swiper="home" className="swiper mod--home">
-                  <div className="swiper-wrapper mod--home">
-                    <div className="swiper-slide mod--home">
+                <Swiper
+                  modules={[Navigation]}
+                  className="swiper mod--home"
+                  navigation={{
+                    prevEl: '[data-swiper-prev="home"]',
+                    nextEl: '[data-swiper-next="home"]',
+                  }}
+                  loop={true}
+                  onSlideChange={(swiper) => {
+                    // Update stories line fill based on active slide
+                    const fills = document.querySelectorAll('.home__stories-line-fill');
+                    fills.forEach((fill, index) => {
+                      fill.style.width = index === swiper.realIndex ? '100%' : '0%';
+                    });
+                  }}
+                >
+                  {videos.map((videoSrc, index) => (
+                    <SwiperSlide key={index} className="swiper-slide mod--home">
                       <div className="home__video w-embed">
                         <video
-                          //   style="width: 100%; height: 100%; object-fit: cover"
                           style={{
                             width: "100%",
                             height: "100%",
@@ -244,85 +268,22 @@ const Hero = () => {
                           playsInline
                           preload="auto"
                         >
-                          <source
-                            src="https://d3vlq52qrgdnc2.cloudfront.net/home-story-1.mp4"
-                            type="video/mp4"
-                          />
+                          <source src={videoSrc} type="video/mp4" />
                         </video>
                       </div>
-                    </div>
-                    <div className="swiper-slide mod--home">
-                      <div className="home__video w-embed">
-                        <video
-                          //   style="width: 100%; height: 100%; object-fit: cover"
-                          style={{
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                          }}
-                          autoPlay
-                          muted
-                          loop
-                          playsInline
-                          preload="auto"
-                        >
-                          <source
-                            src="https://d3vlq52qrgdnc2.cloudfront.net/home-story-2.mp4"
-                            type="video/mp4"
-                          />
-                        </video>
-                      </div>
-                    </div>
-                    <div className="swiper-slide mod--home">
-                      <div className="home__video w-embed">
-                        <video
-                          //   style="width: 100%; height: 100%; object-fit: cover"
-                          style={{
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                          }}
-                          autoPlay
-                          muted
-                          loop
-                          playsInline
-                          preload="auto"
-                        >
-                          <source
-                            src="https://d3vlq52qrgdnc2.cloudfront.net/home-story-3.mp4"
-                            type="video/mp4"
-                          />
-                        </video>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+
                 <div className="home__stories">
-                  <div data-stories-lines="" className="home__stories-top">
-                    <div className="home__stories-line-wrap">
-                      <div className="home__stories-line">
-                        <div
-                          data-stories-fill=""
-                          className="home__stories-line-fill"
-                        ></div>
+                  <div className="home__stories-top">
+                    {[0, 1, 2].map((index) => (
+                      <div key={index} className="home__stories-line-wrap">
+                        <div className="home__stories-line">
+                          <div className="home__stories-line-fill"></div>
+                        </div>
                       </div>
-                    </div>
-                    <div className="home__stories-line-wrap">
-                      <div className="home__stories-line">
-                        <div
-                          data-stories-fill=""
-                          className="home__stories-line-fill"
-                        ></div>
-                      </div>
-                    </div>
-                    <div className="home__stories-line-wrap">
-                      <div className="home__stories-line">
-                        <div
-                          data-stories-fill=""
-                          className="home__stories-line-fill"
-                        ></div>
-                      </div>
-                    </div>
+                    ))}
                   </div>
                   <div className="home__stories-bottom">
                     <img
@@ -339,14 +300,9 @@ const Hero = () => {
                     />
                   </div>
                 </div>
-                <div
-                  data-swiper-prev="home"
-                  className="home__stories-nav"
-                ></div>
-                <div
-                  data-swiper-next="home"
-                  className="home__stories-nav is-next"
-                ></div>
+
+                <div data-swiper-prev="home" className="home__stories-nav"></div>
+                <div data-swiper-next="home" className="home__stories-nav is-next"></div>
               </div>
             </div>
           </div>
