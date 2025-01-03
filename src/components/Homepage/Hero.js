@@ -286,18 +286,18 @@ const Hero = () => {
                     ))}
                   </div>
                   <div className="home__stories-bottom">
+                    {/* icon ig story */}
                     <img
-                      src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/6545115054d0cddcd30b1271_stories-interface-author.svg"
+                      src="/Homepage/storyicon.svg"
                       loading="eager"
                       alt=""
-                      className="home__stories-author"
-                    />
-                    <img
+                      className="home__stories-author"/>
+                                        {/* <img
                       src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65451150eeedc8ea44d6a936_stories-interface-dots.svg"
                       loading="eager"
                       alt=""
                       className="home__stories-menu"
-                    />
+                    /> */}
                   </div>
                 </div>
 
