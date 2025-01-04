@@ -10,6 +10,9 @@ const Navbar = () => {
   const projects = () => {
     router.push('/projects')
   }
+  const services = () => {
+    router.push('/services')
+  }
   return (
     <>
       <header data-anim-trigger="load" class="header is-header-hide">
@@ -17,7 +20,7 @@ const Navbar = () => {
           data-header-absolute=""
           class="section mod--header is-header-absolute"
         >
-          <div class="header__banners"></div>
+          <div class="header__banners"> </div>
           <div data-anim-delay="" class="container mod--header">
             <div class="columns mod--header">
               <div class="columns__col mod--header is-1">
@@ -43,7 +46,7 @@ const Navbar = () => {
                     data-hover=""
                     class="header__nav-link mod--dropdown"
                   >
-                    <div class="overflow-hidden">
+                    <div class="overflow-hidden" onClick={services} >
                       <div data-hover-elem="" class="button__texts">
                         <div class="button__text">services</div>
                         <div class="button__text is-absolute">services</div>
@@ -75,18 +78,13 @@ const Navbar = () => {
                       <div class="button__text is-absolute">projects</div>
                     </div>
                   </div>
-                  <a
-                    data-hover=""
-                    href="/services/dedicated-team.html"
-                    class="header__nav-link w-inline-block"
-                  >
-                    <div class="button__overflow">
-                      <div data-hover-elem="" class="button__texts">
-                        <div class="button__text">Our Process</div>
-                        <div class="button__text is-absolute">Our Process</div>
-                      </div>
+
+                  <div class="button__overflow" onClick={services}>
+                    <div data-hover-elem="" class="button__texts">
+                      <div class="button__text">Our Process</div>
+                      <div class="button__text is-absolute">Our Process</div>
                     </div>
-                  </a>
+                  </div>
                   <a
                     data-hover=""
                     href="opensource.html.html"
@@ -201,7 +199,7 @@ const Navbar = () => {
                     data-hover=""
                     class="header__nav-link mod--dropdown"
                   >
-                    <div class="overflow-hidden">
+                    <div class="overflow-hidden" onClick={services}>
                       <div data-hover-elem="" class="button__texts">
                         <div class="button__text">services</div>
                         <div class="button__text is-absolute">services</div>
@@ -233,18 +231,14 @@ const Navbar = () => {
                     </div>
                   </div>
 
-                  <a
-                    data-hover=""
-                    href="/services/dedicated-team.html"
-                    class="header__nav-link w-inline-block"
-                  >
-                    <div class="button__overflow">
-                      <div data-hover-elem="" class="button__texts">
-                        <div class="button__text">Our Process</div>
-                        <div class="button__text is-absolute">Our Process</div>
-                      </div>
+
+                  <div class="button__overflow" onClick={services}>
+                    <div data-hover-elem="" class="button__texts">
+                      <div class="button__text">Our Process</div>
+                      <div class="button__text is-absolute">Our Process</div>
                     </div>
-                  </a>
+                  </div>
+
                   <a
                     data-hover=""
                     href="opensource.html"
@@ -375,17 +369,14 @@ const Navbar = () => {
                   </div>
                 </div>
 
-                <a
-                  href="/services/dedicated-team.html"
-                  class="header__nav-link w-inline-block"
-                >
-                  <div class="overflow-hidden">
-                    <div data-hover-elem="" class="button__texts">
-                      <div class="button__text">Our Process</div>
-                      <div class="button__text is-absolute">Our Process</div>
-                    </div>
+
+                <div class="overflow-hidden" onClick={services}>
+                  <div data-hover-elem="" class="button__texts">
+                    <div class="button__text">Our Process</div>
+                    <div class="button__text is-absolute">Our Process</div>
                   </div>
-                </a>
+                </div>
+
                 <a
                   href="opensource.html"
                   class="header__nav-link w-inline-block"
