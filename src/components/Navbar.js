@@ -1,10 +1,11 @@
 "use client";
 
+import { useRouter } from "next/router";
 import React from "react";
-import { useRouter } from "next/navigation";
+
 
 const Navbar = () => {
-  const     router = useRouter();
+  const router = useRouter();
 
   const projects = () => {
     router.push('/projects')

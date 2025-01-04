@@ -2,6 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 import $ from "jquery";
 import Script from "next/script";
+import Navbar from "@/components/Navbar";
 
 export default function Document() {
   return (
@@ -108,6 +109,7 @@ export default function Document() {
             `,
           }}
         />
+
       </body>
     </Html>
   );
