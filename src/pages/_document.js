@@ -44,6 +44,7 @@ export default function Document() {
       </Head>
 
       <body className="antialiased">
+        {/* <Navbar /> */}
         <Main />
         <NextScript />
 
