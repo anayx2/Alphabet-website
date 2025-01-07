@@ -74,14 +74,14 @@ export default function Navbar() {
                 </div>
 
 
-                <span onClick={Process} className="header__nav-link">
+                {/* <span onClick={Process} className="header__nav-link">
                   <div className="button__overflow">
                     <div data-hover-elem="" className="button__texts">
                       <div className="button__text is-absolute">Our Process</div>
                       <div className="button__text">Our Process</div>
                     </div>
                   </div>
-                </span>
+                </span> */}
                 <span onClick={Service} className="header__nav-link">
                   <div className="button__overflow">
                     <div data-hover-elem="" className="button__texts">

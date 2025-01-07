@@ -6,7 +6,6 @@ import React from 'react'
 const projects = () => {
   return (
     <>
-    
       <Navbar />
       <div>
         <div className="page-wrapper">
