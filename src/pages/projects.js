@@ -6,59 +6,7 @@ import React from 'react'
 const projects = () => {
   return (
     <>
-      <Head>
-        <link
-          href="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/css/halo-lab.cd6771155.min.css"
-          rel="stylesheet"
-          type="text/css"
-        />
-        <link
-          href="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65ae3a51b9eea4cecbb82f1a_favicon.gif"
-          rel="shortcut icon"
-          type="image/x-icon"
-        />
-        <link
-          href="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/64008b5d15340345dde09c5c_webclip.png"
-          rel="apple-touch-icon"
-        />
-        <link href="projects?be99beb4_page=4" rel="canonical" />
-        <link
-          rel="stylesheet"
-          href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
-        />
-        <link
-          href="https://assets.slater.app/slater/826/3053.css?v=1.2"
-          rel="stylesheet"
-          type="text/css"
-        />
-        {/* <script
-                    async
-                    src="https://cdn.jsdelivr.net/npm/@finsweet/cookie-consent@1/fs-cc.js"
-                    fs-cc-mode="opt-in"
-                ></script> */}
-        <script
-          async
-          src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsload@1/cmsload.js"
-        ></script>
-        <script
-          async
-          src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsfilter@1/cmsfilter.js"
-        ></script>
-        <script
-          async
-          src="https://cdn.jsdelivr.net/npm/@finsweet/attributes-cmsnest@1/cmsnest.js"
-        ></script>
-        {/* <script
-          src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=63f38a8c92397a024fcb9ae8"
-          integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
-          crossorigin="anonymous"
-        ></script> */}
-        <script
-          src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/js/halo-lab.b47d30dd5.js"
-          type="text/javascript"
-        ></script>
-        <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-      </Head>
+    
       <Navbar />
       <div>
         <div className="page-wrapper">

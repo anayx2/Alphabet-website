@@ -12,10 +12,9 @@ export default function Navbar() {
   // Define all navigation functions
   const Home = () => router.push('/')
   const Projects = () => router.push('/projects')
-  const OpenSource = () => router.push('/opensource')
   const Service = () => router.push('/services')
-  const Blog = () => router.push('/blog')
-  const Contacts = () => router.push('/contacts')
+  const Blog = () => router.push('/blogs')
+  const Contacts = () => router.push('/contact-us')
   const Process = () => router.push('/process')
 
   useEffect(() => {
