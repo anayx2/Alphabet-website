@@ -82,7 +82,7 @@ const blogDetail = () => {
                                                 <div class="author"><img src="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/63ff85841141c24449d163ca_cms-author-11.webp" loading="lazy" alt="" class="author__ava" />
                                                     <div class="author__text-wrap">
                                                         <div class="text-weight-medium">Valentine Boyev</div>
-                                                        <div class="text-size-14 opacity-60">CEO at Halo Lab</div>
+                                                        <div class="text-size-14 opacity-60">CEO at Alphabet Technology</div>
                                                     </div>
                                                 </div>
                                             </a>
@@ -381,7 +381,7 @@ const blogDetail = () => {
                                             srcset="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/668bdf6e77a6dff9b8855e45_Illustration2-p-500.webp 500w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/668bdf6e77a6dff9b8855e45_Illustration2-p-800.webp 800w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/668bdf6e77a6dff9b8855e45_Illustration2.webp 1200w"
                                             class="post-card__img active" /></a>
                                         <a data-hover="" href="mobile-app-design-process" class="post-card__title-link w-inline-block">
-                                            <h2 class="post-card__title">Halo Lab’s mobile app design process — our workflow and case examples</h2>
+                                            <h2 class="post-card__title">Alphabet Technology’s mobile app design process — our workflow and case examples</h2>
                                             <div class="hide">
                                                 <div class="post-card__span-icons">
                                                     <div data-post-card-arrow="" class="post-card__icons">
@@ -537,7 +537,7 @@ const blogDetail = () => {
                                         <div data-swiper="reviews-form" class="swiper mod--discuss">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">The site developed by Halo Lab projected a very premium experience, successfully delivering the client’s messaging to customers. Despite external challenges, the team’s performance was exceptional.</div>
+                                                    <div class="text-size-20 text-weight-medium">The site developed by Alphabet Technology projected a very premium experience, successfully delivering the client’s messaging to customers. Despite external challenges, the team’s performance was exceptional.</div>
                                                     <div class="author"><img width="56" alt="Aaron Nwabuoku avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641c384be46dfd24f8039d6c_form-review-ava-01.webp" loading="lazy" class="author__ava" />
                                                         <div class="author__text-wrap">
                                                             <div class="text-weight-medium">Aaron Nwabuoku</div>
@@ -546,7 +546,7 @@ const blogDetail = () => {
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">Thanks to Halo Lab&#x27;s work, the client scored 95 points on the PageSpeed insights test and increased their CR by 7.5%. They frequently communicated via Slack and Google Meet, ensuring an effective workflow.</div>
+                                                    <div class="text-size-20 text-weight-medium">Thanks to Alphabet Technology&#x27;s work, the client scored 95 points on the PageSpeed insights test and increased their CR by 7.5%. They frequently communicated via Slack and Google Meet, ensuring an effective workflow.</div>
                                                     <div class="author"><img width="56" alt="Viktor Rovkach avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/650d626822cc3e81c79a8aab_form-review-ava-02.webp" loading="lazy" class="author__ava" />
                                                         <div class="author__text-wrap">
                                                             <div class="text-weight-medium">Viktor Rovkach</div>
@@ -555,7 +555,7 @@ const blogDetail = () => {
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">The client is thrilled with the new site and excited to deploy it soon. Halo Lab manages tasks well and communicates regularly to ensure both sides are always on the same page and all of the client’s needs
+                                                    <div class="text-size-20 text-weight-medium">The client is thrilled with the new site and excited to deploy it soon. Alphabet Technology manages tasks well and communicates regularly to ensure both sides are always on the same page and all of the client’s needs
                                                         are addressed promptly.
                                                     </div>
                                                     <div class="author"><img width="56" alt="Rahil Sachak Patwa avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641c3ce08742cc3c0200b362_form-review-ava-03.webp" loading="lazy" class="author__ava" />

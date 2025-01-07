@@ -4635,7 +4635,7 @@ const projects = () => {
                           <div className="swiper-wrapper">
                             <div className="swiper-slide mod--discuss">
                               <div className="text-size-20 text-weight-medium">
-                                The site developed by Halo Lab projected a very
+                                The site developed by Alphabet Technology projected a very
                                 premium experience, successfully delivering the
                                 client’s messaging to customers. Despite external
                                 challenges, the team’s performance was exceptional.
@@ -4660,7 +4660,7 @@ const projects = () => {
                             </div>
                             <div className="swiper-slide mod--discuss">
                               <div className="text-size-20 text-weight-medium">
-                                Thanks to Halo Lab&#x27;s work, the client scored 95
+                                Thanks to Alphabet Technology&#x27;s work, the client scored 95
                                 points on the PageSpeed insights test and increased
                                 their CR by 7.5%. They frequently communicated via
                                 Slack and Google Meet, ensuring an effective
@@ -4687,7 +4687,7 @@ const projects = () => {
                             <div className="swiper-slide mod--discuss">
                               <div className="text-size-20 text-weight-medium">
                                 The client is thrilled with the new site and excited
-                                to deploy it soon. Halo Lab manages tasks well and
+                                to deploy it soon. Alphabet Technology manages tasks well and
                                 communicates regularly to ensure both sides are
                                 always on the same page and all of the client’s
                                 needs are addressed promptly.

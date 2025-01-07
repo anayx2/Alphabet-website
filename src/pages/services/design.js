@@ -508,7 +508,7 @@ const design = () => {
                                                     <a data-hover="" href="../project/raven" class="w-inline-block">
                                                         <h3 class="heading-5 mod--works">The Leading Brand for Custom Esports Clothing Design</h3>
                                                     </a>
-                                                    <p class="opacity-70">Halo Lab crafted a 3D Builder for Raven from scratch, helping them dominate the esports market with a custom ecommerce product.</p>
+                                                    <p class="opacity-70">Alphabet Technology crafted a 3D Builder for Raven from scratch, helping them dominate the esports market with a custom ecommerce product.</p>
                                                 </div>
                                             </div>
                                             <div data-mask="works" class="columns__col mod--works is--2">
@@ -601,7 +601,7 @@ const design = () => {
                                 <h2 data-anim-heading="">Creative design wizards</h2>
                                 <div class="service-team__total">
                                     <h3 class="heading-3">50+</h3>
-                                    <div>DESIGNERS IN THE<br />HALO LAB TEAM</div>
+                                    <div>DESIGNERS IN THE<br />Alphabet Technology TEAM</div>
                                 </div>
                             </div>
                             <div class="columns__col mod--team is-2">
@@ -662,7 +662,7 @@ const design = () => {
                                         data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg" data-default-duration="2.6666666666666665" data-duration="0" data-ix2-initial-state="0"></div>
                                     <div class="service-features__rich w-richtext">
                                         <h3>Flexibility and scalability</h3>
-                                        <p>Halo Lab’s designers can easily adjust to changes in your project and scale up or down as needed.</p>
+                                        <p>Alphabet Technology’s designers can easily adjust to changes in your project and scale up or down as needed.</p>
                                     </div>
                                 </div>
                             </div>
@@ -804,7 +804,7 @@ const design = () => {
                             <div class="columns__col mod--faq">
                                 <div class="faq__ask-card is-white">
                                     <div class="faq__ask-content"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/64ac00c52f04f0ef7543e1ed_ava-Julia-Shumanova.webp" loading="lazy" width="80" alt="Julia Shumanova manager" class="faq__ask-ava" />
-                                        <div>This is Julia, Halo Lab’s manager. Feel free to text her and get all the answers you need.</div>
+                                        <div>This is Julia, Alphabet Technology’s manager. Feel free to text her and get all the answers you need.</div>
                                     </div>
                                     <a href="https://wa.me/12133378573" data-hover="" target="_blank" class="button w-inline-block">
                                         <div class="button__overflow">
@@ -895,7 +895,7 @@ const design = () => {
                                         <nav class="dropdown__list is-inter w-dropdown-list">
                                             <div class="dropdown__content mod--faq">
                                                 <div class="dropdown__rich-faq w-richtext">
-                                                    <p>At Halo Lab, we understand the importance of meeting deadlines and delivering work on time. Our team of design experts follows a rigorous project management process that includes setting clear timelines,
+                                                    <p>At Alphabet Technology, we understand the importance of meeting deadlines and delivering work on time. Our team of design experts follows a rigorous project management process that includes setting clear timelines,
                                                         scheduled meetings with clients, and thorough quality assurance checks to ensure that everything is completed timely. Besides, we provide our clients with regular updates on the projects’ status, so
                                                         they can have peace of mind knowing that their designs are progressing as planned.</p>
                                                 </div>
@@ -1046,7 +1046,7 @@ const design = () => {
                                         <div data-swiper="reviews-form" class="swiper mod--discuss">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">The site developed by Halo Lab projected a very premium experience, successfully delivering the client’s messaging to customers. Despite external challenges, the team’s performance was exceptional.</div>
+                                                    <div class="text-size-20 text-weight-medium">The site developed by Alphabet Technology projected a very premium experience, successfully delivering the client’s messaging to customers. Despite external challenges, the team’s performance was exceptional.</div>
                                                     <div class="author"><img width="56" alt="Aaron Nwabuoku avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641c384be46dfd24f8039d6c_form-review-ava-01.webp" loading="lazy" class="author__ava" />
                                                         <div class="author__text-wrap">
                                                             <div class="text-weight-medium">Aaron Nwabuoku</div>
@@ -1055,7 +1055,7 @@ const design = () => {
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">Thanks to Halo Lab&#x27;s work, the client scored 95 points on the PageSpeed insights test and increased their CR by 7.5%. They frequently communicated via Slack and Google Meet, ensuring an effective workflow.</div>
+                                                    <div class="text-size-20 text-weight-medium">Thanks to Alphabet Technology&#x27;s work, the client scored 95 points on the PageSpeed insights test and increased their CR by 7.5%. They frequently communicated via Slack and Google Meet, ensuring an effective workflow.</div>
                                                     <div class="author"><img width="56" alt="Viktor Rovkach avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/650d626822cc3e81c79a8aab_form-review-ava-02.webp" loading="lazy" class="author__ava" />
                                                         <div class="author__text-wrap">
                                                             <div class="text-weight-medium">Viktor Rovkach</div>
@@ -1064,7 +1064,7 @@ const design = () => {
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">The client is thrilled with the new site and excited to deploy it soon. Halo Lab manages tasks well and communicates regularly to ensure both sides are always on the same page and all of the client’s needs
+                                                    <div class="text-size-20 text-weight-medium">The client is thrilled with the new site and excited to deploy it soon. Alphabet Technology manages tasks well and communicates regularly to ensure both sides are always on the same page and all of the client’s needs
                                                         are addressed promptly.
                                                     </div>
                                                     <div class="author"><img width="56" alt="Rahil Sachak Patwa avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641c3ce08742cc3c0200b362_form-review-ava-03.webp" loading="lazy" class="author__ava" />

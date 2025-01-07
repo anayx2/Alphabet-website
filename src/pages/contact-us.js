@@ -505,7 +505,7 @@ const contact = () => {
               <div class="columns__col mod--faq">
                 <div class="faq__ask-card">
                   <div class="faq__ask-content"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/64ac00c52f04f0ef7543e1ed_ava-Julia-Shumanova.webp" loading="lazy" width="80" alt="Julia Shumanova manager" class="faq__ask-ava" />
-                    <div>This is Julia, Halo Lab’s manager. Feel free to text her and get all the answers you need.</div>
+                    <div>This is Julia, Alphabet Technology’s manager. Feel free to text her and get all the answers you need.</div>
                   </div>
                   <a href="https://wa.me/12133378573" data-hover="" target="_blank" class="button bg-color-white w-inline-block">
                     <div class="button__overflow">
@@ -542,7 +542,7 @@ const contact = () => {
                     <nav class="dropdown__list is-inter w-dropdown-list">
                       <div class="dropdown__content mod--faq">
                         <div class="dropdown__rich-faq w-richtext">
-                          <p>At Halo Lab, we’re all about creativity and innovation. Our design services include web design, UI/UX design, mobile app design, branding, and eCommerce design. We also offer development services such as
+                          <p>At Alphabet Technology, we’re all about creativity and innovation. Our design services include web design, UI/UX design, mobile app design, branding, and eCommerce design. We also offer development services such as
                             software development, CMS, back-end, front-end, and web development. In addition, our marketing services cover everything from SEO and content marketing to pitch deck design and conversion rate optimization.</p>
                         </div>
                       </div>
@@ -597,8 +597,8 @@ const contact = () => {
                     <nav class="dropdown__list is-inter w-dropdown-list">
                       <div class="dropdown__content mod--faq">
                         <div class="dropdown__rich-faq w-richtext">
-                          <p>We believe that portfolio is a testament to the quality of work and the results our team achieves for each and every client. You can browse the <a href="projects">Halo Lab website</a>, <a href="https://www.behance.net/halolab"
-                            target="_blank">Behance</a>, <a href="https://dribbble.com/halolab" target="_blank">Dribbble</a>, or <a href="https://webflow.com/@halolab" target="_blank">Webflow</a> to see examples of Halo Lab’s projects,
+                          <p>We believe that portfolio is a testament to the quality of work and the results our team achieves for each and every client. You can browse the <a href="projects">Alphabet Technology website</a>, <a href="https://www.behance.net/halolab"
+                            target="_blank">Behance</a>, <a href="https://dribbble.com/halolab" target="_blank">Dribbble</a>, or <a href="https://webflow.com/@halolab" target="_blank">Webflow</a> to see examples of Alphabet Technology’s projects,
                             including websites, mobile apps, branding cases, and more.</p>
                         </div>
                       </div>
@@ -652,7 +652,7 @@ const contact = () => {
                     <nav class="dropdown__list is-inter w-dropdown-list">
                       <div class="dropdown__content mod--faq">
                         <div class="dropdown__rich-faq w-richtext">
-                          <p>Yes, Halo Lab offers comprehensive SEO services to help clients improve their online visibility and drive organic traffic to their websites. Our team of experts is well-versed in the latest SEO techniques
+                          <p>Yes, Alphabet Technology offers comprehensive SEO services to help clients improve their online visibility and drive organic traffic to their websites. Our team of experts is well-versed in the latest SEO techniques
                             and strategies and is committed to staying up-to-date with industry trends and best practices. We offer a range of SEO services, including keyword research, on-page optimization, and off-page optimization,
                             along with analytics and reporting.</p>
                         </div>
@@ -680,7 +680,7 @@ const contact = () => {
                     <nav class="dropdown__list is-inter w-dropdown-list">
                       <div class="dropdown__content mod--faq">
                         <div class="dropdown__rich-faq w-richtext">
-                          <p>Our team believes that every project is unique and requires a customized approach, which is why Halo Lab doesn’t have a strict price list. Instead, we strive to provide transparent and fair pricing for each
+                          <p>Our team believes that every project is unique and requires a customized approach, which is why Alphabet Technology doesn’t have a strict price list. Instead, we strive to provide transparent and fair pricing for each
                             client based on the project’s requirements and complexity, business goals, and special requests.</p>
                         </div>
                       </div>
@@ -707,7 +707,7 @@ const contact = () => {
                     <nav class="dropdown__list is-inter w-dropdown-list">
                       <div class="dropdown__content mod--faq">
                         <div class="dropdown__rich-faq w-richtext">
-                          <p>We understand the importance of timely delivery and are committed to meeting our client’s deadlines. For this purpose, Halo Lab has a proven track record of delivering high-quality designs on time, using
+                          <p>We understand the importance of timely delivery and are committed to meeting our client’s deadlines. For this purpose, Alphabet Technology has a proven track record of delivering high-quality designs on time, using
                             project management tools to ensure that our team stays on track. Additionally, we provide regular updates and communicate proactively with our clients to ensure that everyone is on the same page.</p>
                         </div>
                       </div>
@@ -776,7 +776,7 @@ const contact = () => {
                             /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg" loading="lazy" alt="star icon" class="reviews__star" /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg"
                               loading="lazy" alt="star icon" class="reviews__star" /></div>
                         </div>
-                        <p class="text-size-20 text-weight-medium">Halo Lab delivered the designs on time, but the client has yet to implement them in their platform, although they’re happy with the deliverables. They had a user-focused design process. Their team provided constant
+                        <p class="text-size-20 text-weight-medium">Alphabet Technology delivered the designs on time, but the client has yet to implement them in their platform, although they’re happy with the deliverables. They had a user-focused design process. Their team provided constant
                           updates and recorded their processes on Loom to keep the client abreast of progress.</p>
                       </div>
                       <div class="author"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641afa4d795f9875c5d97f94_review-ava-01.webp" loading="lazy" width="56" alt="" class="author__ava" />
@@ -797,7 +797,7 @@ const contact = () => {
                             /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg" loading="lazy" alt="star icon" class="reviews__star" /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg"
                               loading="lazy" alt="star icon" class="reviews__star" /></div>
                         </div>
-                        <p class="text-size-20 text-weight-medium">Halo Lab delivered all of the agreed-upon deliverables, and they even went above and beyond to further help the client. They communicated through video calls and used project management tools for synchronization.
+                        <p class="text-size-20 text-weight-medium">Alphabet Technology delivered all of the agreed-upon deliverables, and they even went above and beyond to further help the client. They communicated through video calls and used project management tools for synchronization.
                           The team truly cared about the project and was always very responsive and organized.</p>
                       </div>
                       <div class="author"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641afa60941ec0d23c345089_review-ava-02.webp" loading="lazy" width="56" alt="" class="author__ava" />
@@ -840,7 +840,7 @@ const contact = () => {
                             /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg" loading="lazy" alt="star icon" class="reviews__star" /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg"
                               loading="lazy" alt="star icon" class="reviews__star" /></div>
                         </div>
-                        <p class="text-size-20 text-weight-medium">The client was satisfied with Halo Lab’s high-quality work. They made the designs better and delivered them promptly. The team was easy to work with; they communicated on Slack and provided updates on the progress
+                        <p class="text-size-20 text-weight-medium">The client was satisfied with Alphabet Technology’s high-quality work. They made the designs better and delivered them promptly. The team was easy to work with; they communicated on Slack and provided updates on the progress
                           every day. Moreover, they went beyond expectations and never missed a deadline.</p>
                       </div>
                       <div class="author"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641afb097512c63fdf580fc2_review-ava-04.webp" loading="lazy" width="56" alt="" class="author__ava" />
@@ -861,7 +861,7 @@ const contact = () => {
                             /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg" loading="lazy" alt="star icon" class="reviews__star" /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg"
                               loading="lazy" alt="star icon" class="reviews__star" /></div>
                         </div>
-                        <p class="text-size-20 text-weight-medium">Halo Lab’s work has received positive feedback from internal and external stakeholders. They excelled at project management through Notion, going above and beyond to ensure timely delivery, and they communicated
+                        <p class="text-size-20 text-weight-medium">Alphabet Technology’s work has received positive feedback from internal and external stakeholders. They excelled at project management through Notion, going above and beyond to ensure timely delivery, and they communicated
                           effectively through Slack and email. Their branding skills stood out.</p>
                       </div>
                       <div class="author"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641afbcc7512c6e526591e05_review-ava-05.webp" loading="lazy" width="56" alt="" class="author__ava" />
@@ -882,7 +882,7 @@ const contact = () => {
                             /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg" loading="lazy" alt="star icon" class="reviews__star" /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg"
                               loading="lazy" alt="star icon" class="reviews__star" /></div>
                         </div>
-                        <p class="text-size-20 text-weight-medium">The digital marketing agency was satisfied with Halo Lab&#x27;s designs, which the client&#x27;s developers smoothly implemented. The client lauded the vendor for proactively developing solutions to their challenges
+                        <p class="text-size-20 text-weight-medium">The digital marketing agency was satisfied with Alphabet Technology&#x27;s designs, which the client&#x27;s developers smoothly implemented. The client lauded the vendor for proactively developing solutions to their challenges
                           and presenting ideas to improve the project. They also commended the vendor&#x27;s smooth workflow.</p>
                       </div>
                       <div class="author"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641afc4f1bd5d34aa56b35f4_review-ava-06.webp" loading="lazy" width="56" alt="" class="author__ava" />
@@ -903,7 +903,7 @@ const contact = () => {
                             /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg" loading="lazy" alt="star icon" class="reviews__star" /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg"
                               loading="lazy" alt="star icon" class="reviews__star" /></div>
                         </div>
-                        <p class="text-size-20 text-weight-medium">Halo Lab successfully delivered a product design that has proved popular with users. The team’s professionalism and creative abilities come at a very reasonable price. Their motivation is admirable, and their
+                        <p class="text-size-20 text-weight-medium">Alphabet Technology successfully delivered a product design that has proved popular with users. The team’s professionalism and creative abilities come at a very reasonable price. Their motivation is admirable, and their
                           organization makes for a smooth workflow.</p>
                       </div>
                       <div class="author"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641afcca82529fab1d7e7b1a_review-ava-07.webp" loading="lazy" width="56" alt="" class="author__ava" />
@@ -924,7 +924,7 @@ const contact = () => {
                             /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg" loading="lazy" alt="star icon" class="reviews__star" /><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/63ff2cb2a75a0475348a5685_icon-star.svg"
                               loading="lazy" alt="star icon" class="reviews__star" /></div>
                         </div>
-                        <p class="text-size-20 text-weight-medium">The client&#x27;s collaboration with Halo Lab was successful, as the team was collaborative and efficient during the process, ensuring brand and website alignment. Furthermore, they responsively interfaced with
+                        <p class="text-size-20 text-weight-medium">The client&#x27;s collaboration with Alphabet Technology was successful, as the team was collaborative and efficient during the process, ensuring brand and website alignment. Furthermore, they responsively interfaced with
                           everyone through email and Figma and strictly adhered to the deadlines.</p>
                       </div>
                       <div class="author"><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641afdc201624ac5634fb501_review-ava-08.webp" loading="lazy" width="56" alt="" class="author__ava" />

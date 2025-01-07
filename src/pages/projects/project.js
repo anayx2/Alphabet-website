@@ -33,7 +33,7 @@ const project = () => {
                                 </a>
                             </div>
                         </div>
-                    </div><img src="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero.webp" loading="lazy" alt="Halo Lab's adaptable design for LinkByCar startup" sizes="100vw" srcset="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero-p-500.webp 500w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero-p-800.webp 800w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero-p-1080.webp 1080w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero.webp 1440w"
+                    </div><img src="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero.webp" loading="lazy" alt="Alphabet Technology's adaptable design for LinkByCar startup" sizes="100vw" srcset="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero-p-500.webp 500w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero-p-800.webp 800w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero-p-1080.webp 1080w, https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65fa91bbb3cc0c029195ce4b_bg-hero.webp 1440w"
                         class="project-hero__img" /></section>
                 <section id="about" data-component="about" class="section mod--project-about">
                     <div class="container">
@@ -321,7 +321,7 @@ const project = () => {
                                     <blockquote>This was a complex yet very interesting project, as our client sought not just design but a complete product creation from the ground up.<br /></blockquote>
                                     <h2><a href="linkbycar#UX/UI-design">Making things simple and smooth for every user</a></h2>
                                     <p>Our team wanted to make sure that using the site and platform was a breeze for drivers all over France. So, we put heads together to create additional features that make every trip smoother and hassle-free.</p>
-                                    <p>Keeping this approach in mind, Halo Lab specialists built things intuitively so that users can just jump in and get going without any fuss. This way, we enhanced the customer's experience every step of the way.</p>
+                                    <p>Keeping this approach in mind, Alphabet Technology specialists built things intuitively so that users can just jump in and get going without any fuss. This way, we enhanced the customer's experience every step of the way.</p>
                                     <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                         <a href="linkbycar#modal-3" target="_blank" class="w-inline-block">
                                             <div><img src="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/6628e8ea3ed557ee29874f9e_slide-1.webp" loading="lazy" alt="web development feature: location tracking to ensure security " /></div>
@@ -621,7 +621,7 @@ const project = () => {
                                 <figure class="w-richtext-align-floatleft w-richtext-figure-type-image">
                                     <div><img src="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/65f30e2c7b54c1b6d59d5d2f_logo.svg" loading="lazy" alt="" /></div>
                                 </figure>
-                                <p>Halo Lab provided brand analysis services that helped us with better understanding our market type, niche, customers, and competitors. They designed our whole SaaS platform, leveraging both UI and UX expertise. Furthermore,
+                                <p>Alphabet Technology provided brand analysis services that helped us with better understanding our market type, niche, customers, and competitors. They designed our whole SaaS platform, leveraging both UI and UX expertise. Furthermore,
                                     they used React to help us build a customer-facing dashboard that connects to our existing backends.</p>
                                 <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                     <div><img src="https://cdn.prod.website-files.com/63fc977c14aaea404dce4439/6604346e3e2d87e69ffdc9bb_feedback%20d.webp" loading="lazy" alt="" /></div>
@@ -634,7 +634,7 @@ const project = () => {
                                 <figure class="w-richtext-align-floatleft w-richtext-figure-type-image">
                                     <div><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65f309c4230e5c295a14b21f_logo.svg" loading="lazy" alt="" /></div>
                                 </figure>
-                                <p>Halo Lab provided brand analysis services that helped us with better understanding our market type, niche, customers, and competitors. They designed our whole SaaS platform, leveraging both UI and UX expertise. Furthermore,
+                                <p>Alphabet Technology provided brand analysis services that helped us with better understanding our market type, niche, customers, and competitors. They designed our whole SaaS platform, leveraging both UI and UX expertise. Furthermore,
                                     they used React to help us build a customer-facing dashboard that connects to our existing backends.</p>
                                 <figure class="w-richtext-align-center w-richtext-figure-type-image">
                                     <div><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65f30a792ae9f835cab344ba_feedback.webp" loading="lazy" alt="" /></div>
@@ -755,7 +755,7 @@ const project = () => {
                                         <div data-swiper="reviews-form" class="swiper mod--discuss">
                                             <div class="swiper-wrapper">
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">The site developed by Halo Lab projected a very premium experience, successfully delivering the client's messaging to customers. Despite external challenges, the team's performance was exceptional.</div>
+                                                    <div class="text-size-20 text-weight-medium">The site developed by Alphabet Technology projected a very premium experience, successfully delivering the client's messaging to customers. Despite external challenges, the team's performance was exceptional.</div>
                                                     <div class="author"><img width="56" alt="Aaron Nwabuoku avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641c384be46dfd24f8039d6c_form-review-ava-01.webp" loading="lazy" class="author__ava" />
                                                         <div class="author__text-wrap">
                                                             <div class="text-weight-medium">Aaron Nwabuoku</div>
@@ -764,7 +764,7 @@ const project = () => {
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">Thanks to Halo Lab&#x27;s work, the client scored 95 points on the PageSpeed insights test and increased their CR by 7.5%. They frequently communicated via Slack and Google Meet, ensuring an effective workflow.</div>
+                                                    <div class="text-size-20 text-weight-medium">Thanks to Alphabet Technology&#x27;s work, the client scored 95 points on the PageSpeed insights test and increased their CR by 7.5%. They frequently communicated via Slack and Google Meet, ensuring an effective workflow.</div>
                                                     <div class="author"><img width="56" alt="Viktor Rovkach avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/650d626822cc3e81c79a8aab_form-review-ava-02.webp" loading="lazy" class="author__ava" />
                                                         <div class="author__text-wrap">
                                                             <div class="text-weight-medium">Viktor Rovkach</div>
@@ -773,7 +773,7 @@ const project = () => {
                                                     </div>
                                                 </div>
                                                 <div class="swiper-slide mod--discuss">
-                                                    <div class="text-size-20 text-weight-medium">The client is thrilled with the new site and excited to deploy it soon. Halo Lab manages tasks well and communicates regularly to ensure both sides are always on the same page and all of the client's needs
+                                                    <div class="text-size-20 text-weight-medium">The client is thrilled with the new site and excited to deploy it soon. Alphabet Technology manages tasks well and communicates regularly to ensure both sides are always on the same page and all of the client's needs
                                                         are addressed promptly.
                                                     </div>
                                                     <div class="author"><img width="56" alt="Rahil Sachak Patwa avatar" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/641c3ce08742cc3c0200b362_form-review-ava-03.webp" loading="lazy" class="author__ava" />

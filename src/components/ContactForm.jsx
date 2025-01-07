@@ -469,7 +469,7 @@ export default function BookingForm() {
                   <div className="bg-black text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium">
                     HL
                   </div>
-                  <span className="text-gray-600 font-medium">Halo Lab</span>
+                  <span className="text-gray-600 font-medium">Alphabet Technology</span>
                 </div>
 
                 <div className="space-y-2">
@@ -528,7 +528,7 @@ export default function BookingForm() {
                   <div className="bg-black text-white w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium">
                     HL
                   </div>
-                  <span className="text-gray-900 font-medium">Halo Lab</span>
+                  <span className="text-gray-900 font-medium">Alphabet Technology</span>
                 </div>
 
                 <div className="space-y-2">
