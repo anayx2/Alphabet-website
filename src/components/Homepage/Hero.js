@@ -7,7 +7,8 @@ import { Navigation } from 'swiper/modules';
 
 
 const Hero = () => {
-  const videoRef = useRef(null);
+  const videoRefs = useRef([]);
+
   const videos = [
     '/Homepage/herovideos/Website.mp4',
     '/Homepage/herovideos/UX-UI.mp4',
@@ -15,17 +16,45 @@ const Hero = () => {
   ];
 
   useEffect(() => {
-    const playVideo = () => {
-      if (videoRef.current) {
-        videoRef.current
-          .play()
-          .catch((err) => console.log("Autoplay failed:", err));
-      }
-    };
-
-    playVideo();
+    videoRefs.current = videoRefs.current.slice(0, videos.length);
   }, []);
 
+  // Handle video playback
+  const handleVideoPlay = (videoElement) => {
+    if (videoElement) {
+      const playPromise = videoElement.play();
+
+      if (playPromise !== undefined) {
+        playPromise
+          .then(() => {
+            // Video started playing successfully
+          })
+          .catch((error) => {
+            // Auto-play was prevented
+            console.log("Playback prevented:", error);
+            // Add touch-to-play functionality for mobile
+            videoElement.addEventListener('touchstart', () => {
+              videoElement.play();
+            });
+          });
+      }
+    }
+  };
+
+  // Handle slide change
+  const handleSlideChange = (swiper) => {
+    // Play the current slide's video
+    const currentVideo = videoRefs.current[swiper.realIndex];
+    if (currentVideo) {
+      handleVideoPlay(currentVideo);
+    }
+
+    // Update stories line fill
+    const fills = document.querySelectorAll('.home__stories-line-fill');
+    fills.forEach((fill, index) => {
+      fill.style.width = index === swiper.realIndex ? '100%' : '0%';
+    });
+  };
   useEffect(() => {
     const words = document.querySelectorAll(".h1__word");
     const letters = document.querySelectorAll(".h1__letter");
@@ -291,8 +320,8 @@ const Hero = () => {
                       src="/Homepage/storyicon.svg"
                       loading="eager"
                       alt=""
-                      className="home__stories-author"/>
-                                        {/* <img
+                      className="home__stories-author" />
+                    {/* <img
                       src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65451150eeedc8ea44d6a936_stories-interface-dots.svg"
                       loading="eager"
                       alt=""
