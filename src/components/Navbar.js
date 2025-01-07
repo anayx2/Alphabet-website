@@ -1,11 +1,35 @@
 'use client'
 
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import Link from "next/link"
+import { useRouter } from "next/router"
 // import img from "next/img"
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(true)
+  const router = useRouter()
+
+  // Define all navigation functions
+  const Home = () => router.push('/')
+  const Projects = () => router.push('/projects')
+  const OpenSource = () => router.push('/opensource')
+  const Service = () => router.push('/services')
+  const Blog = () => router.push('/blog')
+  const Contacts = () => router.push('/contacts')
+  const Process = () => router.push('/process')
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsMenuOpen(true); // Trigger the onClick functionality when scrolling
+    };
+    if (!isMenuOpen) {
+      window.addEventListener("scroll", handleScroll);
+    }
+    // Cleanup the event listener when the component unmounts or menu opens
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [isMenuOpen]);
 
   return (
     <header data-anim-trigger="load" className="header is-header-hide">
@@ -14,7 +38,7 @@ export default function Navbar() {
         <div data-anim-delay="" className="container mod--header">
           <div className="columns mod--header">
             <div className="columns__col mod--header is-1">
-              <Link href="/" className="logo-link">
+              <span onClick={Home} className="logo-link">
                 <img
                   src="/logo.png"
                   loading="eager"
@@ -23,7 +47,7 @@ export default function Navbar() {
                   alt=""
                   className="logo"
                 />
-              </Link>
+              </span>
             </div>
             <div className="columns__col mod--header is-2 hide-tablet">
               <nav data-anim-delay="" className="header__nav anim">
@@ -42,44 +66,44 @@ export default function Navbar() {
                 </div>
 
                 <div className="button__overflow">
-                  <Link href="/projects">
+                  <span onClick={Projects} className="header__nav-link">
                     <div data-hover-elem="" className="button__texts">
                       <div className="button__text">projects</div>
                       <div className="button__text is-absolute">projects</div>
                     </div>
-                  </Link>
+                  </span>
                 </div>
 
-                <div className="button__overflow">
-                  <Link href="/process">
-                    <div data-hover-elem="" className="button__texts">
-                      <div className="button__text">Our Process</div>
-                      <div className="button__text is-absolute">Our Process</div>
-                    </div>
-                  </Link>
-                </div>
 
-                <Link href="/opensource" className="header__nav-link">
+                <span onClick={Process} className="header__nav-link">
                   <div className="button__overflow">
                     <div data-hover-elem="" className="button__texts">
-                      <div className="button__text is-absolute">open sourCe</div>
-                      <div className="button__text">open sourCe</div>
+                      <div className="button__text is-absolute">Our Process</div>
+                      <div className="button__text">Our Process</div>
                     </div>
                   </div>
-                </Link>
+                </span>
+                <span onClick={Service} className="header__nav-link">
+                  <div className="button__overflow">
+                    <div data-hover-elem="" className="button__texts">
+                      <div className="button__text is-absolute">Services</div>
+                      <div className="button__text">Services</div>
+                    </div>
+                  </div>
+                </span>
 
-                <Link href="/blog" className="header__nav-link">
+                <span onClick={Blog} className="header__nav-link">
                   <div className="button__overflow">
                     <div data-hover-elem="" className="button__texts">
                       <div className="button__text">our blog</div>
                       <div className="button__text is-absolute">our blog</div>
                     </div>
                   </div>
-                </Link>
+                </span>
               </nav>
             </div>
             <div className="columns__col mod--header is-3">
-              <Link href="/contacts" className="button is-small is-white hide-mobile-portrait">
+              <span onClick={Contacts} className="button is-small is-white hide-mobile-portrait">
                 <div className="button__overflow">
                   <div data-hover-elem="" className="button__texts">
                     <div className="button__text">Contact us</div>
@@ -102,7 +126,7 @@ export default function Navbar() {
                   ></div>
                   <div data-hover-elem="" className="button__bg bg-color-white"></div>
                 </div>
-              </Link>
+              </span >
               <div data-menu-open="" className="burger-wrap" onClick={() => setIsMenuOpen(!isMenuOpen)}>
                 <div className="burger">
                   <div data-anim="" className="burger__line is-1 anim"></div>
@@ -123,11 +147,11 @@ export default function Navbar() {
 
           {!isMenuOpen && (
             <div
-              className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 h-[100dvh] w-[100dvw]"
-              onClick={() => setIsMenuOpen(false)}
+              className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40 h-[400dvh] w-[140%] absolute top-[-50%] left-[-20%]"
+              onClick={() => setIsMenuOpen(true)}
             ></div>
           )}
-          <div className="menu__block" style={{ height: "19rem", zIndex:"99" }}>
+          <div className="menu__block" style={{ height: "19rem", zIndex: "99", width: "100" }}>
             <nav className="header__nav hide-desktop">
               <div data-menu-services-link="" className="header__nav-link mod--dropdown">
                 <div className="overflow-hidden">
