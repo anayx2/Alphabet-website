@@ -54,8 +54,8 @@ const design = () => {
                                     <div class="button is-small-simple bg-color-yellow">
                                         <div class="button__overflow">
                                             <div data-hover-elem="" class="button__texts">
-                                                <div class="button__text">Let’s discuss</div>
-                                                <div class="button__text is-absolute">Let’s discuss</div>
+                                                <div class="button__text">Let's discuss</div>
+                                                <div class="button__text is-absolute">Let's discuss</div>
                                             </div>
                                         </div>
                                     </div><img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/6597f240efa939b246a117ea_icon-button-lightning_white.svg" loading="eager" data-hover-elem="" alt="" class="icon-scale is-2" /></a>
